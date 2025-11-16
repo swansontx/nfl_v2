@@ -1,82 +1,23 @@
 name: CI
 
 on:
-  push:
-    branches: [ main, engage/feature ]
   pull_request:
-    branches: [ main ]
+  push:
+    branches: [ main, feature/* ]
 
 jobs:
   test:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up Java (needed for Firestore emulator)
-        uses: actions/setup-java@v4
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
-          distribution: 'temurin'
-          java-version: '11'
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Cache npm
-        uses: actions/cache@v4
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('functions/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-
-      - name: Install functions deps
-        working-directory: ./functions
-        env:
-          NODE_ENV: development
-        run: npm install --silent
-
-      - name: Start Firestore emulator (use local binary when possible)
-        working-directory: ./functions
-        env:
-          NODE_ENV: development
+          python-version: '3.11'
+      - name: Install dependencies
         run: |
-          echo "Listing ./node_modules/.bin"
-          ls -la ./node_modules/.bin || true
-          if [ -x ./node_modules/.bin/firebase ]; then
-            echo "Using local firebase binary"
-            ./node_modules/.bin/firebase emulators:start --only firestore --project demo &
-          else
-            echo "Local firebase binary not found, attempting installer"
-            curl -sL https://firebase.tools | bash || true
-            firebase emulators:start --only firestore --project demo &
-          fi
-
-          # wait for emulator (prefer local wait-on)
-          if [ -x ./node_modules/.bin/wait-on ]; then
-            ./node_modules/.bin/wait-on tcp:127.0.0.1:8080
-          else
-            npx wait-on tcp:127.0.0.1:8080
-          fi
-        env:
-          FIREBASE_PROJECT: demo
-
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
       - name: Run tests
-        working-directory: ./functions
-        env:
-          FIRESTORE_EMULATOR_HOST: 127.0.0.1:8080
-        run: npm test --silent
-
-      - name: Deploy Firestore security rules (validation)
-        if: ${{ secrets.FIREBASE_SERVICE_ACCOUNT != '' }}
-        working-directory: ./functions
-        env:
-          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
         run: |
-          echo "$FIREBASE_SERVICE_ACCOUNT" | base64 --decode > $HOME/fsa.json
-          PROJECT_ID=$(node -e "const fs = require('fs'); process.stdout.write(JSON.parse(fs.readFileSync(process.argv[1], 'utf8')).project_id)" $HOME/fsa.json)
-          npm install -g firebase-tools@11
-          GOOGLE_APPLICATION_CREDENTIALS=$HOME/fsa.json firebase deploy --only firestore:rules --project $PROJECT_ID --force --non-interactive
+          pytest -q

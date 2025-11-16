@@ -3,3 +3,4 @@ uvicorn
 pandas
 apscheduler
 pytest
+requests-mock
