@@ -22,6 +22,10 @@ def _find_script():
     files = sorted(glob.glob('scripts/generate_*.py'))
     if files:
         return files[-1]
+    # final fallback: check for generate_projections.py at repo root
+    p2 = Path('generate_projections.py')
+    if p2.exists():
+        return str(p2)
     return None
 
 

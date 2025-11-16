@@ -118,8 +118,16 @@ def parlay_suggest(req: ParlayRequest):
 
 @app.post('/api/refresh_projections')
 def refresh_projections(background_tasks: BackgroundTasks):
-    """Trigger a background recompute of projections. Returns accepted status."""
-    background_tasks.add_task(recompute_projections)
-    return {'status': 'accepted'}
+    """Trigger a background recompute of projections. Returns accepted status or error if the generator is missing."""
+    # Prefer to provide immediate feedback if the generator script is missing
+    try:
+        from app.services import worker as worker_service
+        script = worker_service._find_script()
+    except Exception:
+        script = None
+    if not script:
+        return {'status': 'rejected', 'reason': 'generate_projections script not found on disk'}
+    background_tasks.add_task(worker_service.recompute_projections)
+    return {'status': 'accepted', 'script': str(script)}
 
 # run with: uvicorn backend.api:app --reload
