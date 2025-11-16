@@ -64,3 +64,10 @@ GoogleService-Info.plist
 functions/node_modules/
 # local odds api key
 backend/.odds_api_key
+
+# local data
+outputs/
+nfl_data_2025_csv/
+data/
+frontend/.next/
+espn_venv/
