@@ -22,7 +22,6 @@ playground.xcworkspace
 # Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
 # Packages/
 # Package.pins
-# Package.resolved
 # *.xcodeproj
 #
 # Xcode automatically generates this directory with a .xcworkspacedata file and xcuserdata
@@ -33,7 +32,7 @@ playground.xcworkspace
 
 # CocoaPods
 #
-# We recommend against adding the Pods directory to your .gitignore. However
+# We recommend against adding the Pods directory to the git repo. However
 # you should judge for yourself, the pros and cons are mentioned at:
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 #
@@ -62,12 +61,27 @@ fastlane/screenshots/**/*.png
 fastlane/test_output
 GoogleService-Info.plist
 functions/node_modules/
-# local odds api key
-backend/.odds_api_key
 
-# local data
+# Local secrets
+backend/.odds_api_key
+.env
+
+# Local data and outputs
 outputs/
 nfl_data_2025_csv/
 data/
 frontend/.next/
+
+# Virtualenvs and venvs
+.venv
+venv/
 espn_venv/
+
+# Python artifacts
+*.pyc
+__pycache__/
+
+# Other
+odds_*.json
+.DS_Store
+.goose/
