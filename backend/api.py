@@ -83,7 +83,8 @@ def projections():
 
 @app.get('/api/props_candidates')
 def props_candidates():
-    files = sorted(OUTPUTS.glob('props_candidates_20251026_20251027_*.csv'))
+    # return the latest props candidates file if present
+    files = sorted(OUTPUTS.glob('props_candidates_*.csv'))
     if not files:
         # fallback to general projections
         return projections()
