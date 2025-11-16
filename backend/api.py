@@ -9,7 +9,18 @@ from app.core.parlay import suggest_parlays
 from app.services.worker import recompute_projections
 from app.services import scheduler
 
+from fastapi.middleware.cors import CORSMiddleware
+
 app = FastAPI(title='Goose NFL Props API')
+# CORS - allow frontend dev by default, override with VITE_API_URL
+_frontend_origin = os.environ.get('VITE_API_URL', 'http://localhost:5173')
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[_frontend_origin],
+    allow_credentials=True,
+    allow_methods=['*'],
+    allow_headers=['*'],
+)
 
 DATA_DIR = Path('data')
 ODDS_DIR = DATA_DIR / 'odds_live'
