@@ -1,0 +1,150 @@
+2025-10-22 19:46:07,929 INFO Starting downloads for years: [2025]
+2025-10-22 19:46:07,930 INFO Fetching pbp_2025 ...
+2025-10-22 19:46:11,168 INFO Saved pbp_2025 -> nfl_data_2025_csv/pbp_2025.csv (rows=18625)
+2025-10-22 19:46:11,168 INFO Fetching weekly_2025 ...
+2025-10-22 19:46:11,405 ERROR Failed to fetch weekly_2025: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/Users/travisswanson/nfl-props-app/nfl_data_2025_csv/download_nfl_2025.py", line 66, in <module>
+    df = func()
+  File "/Users/travisswanson/nfl-props-app/nfl_data_2025_csv/download_nfl_2025.py", line 36, in <lambda>
+    ("weekly_2025", lambda: nfl.import_weekly_data(years=years, downcast=True)),
+  File "/Users/travisswanson/Library/Python/3.9/lib/python/site-packages/nfl_data_py/__init__.py", line 304, in import_weekly_data
+    data = pandas.concat([pandas.read_parquet(url.format(x), engine='auto') for x in years])
+  File "/Users/travisswanson/Library/Python/3.9/lib/python/site-packages/nfl_data_py/__init__.py", line 304, in <listcomp>
+    data = pandas.concat([pandas.read_parquet(url.format(x), engine='auto') for x in years])
+  File "/Users/travisswanson/Library/Python/3.9/lib/python/site-packages/pandas/io/parquet.py", line 503, in read_parquet
+    return impl.read(
+  File "/Users/travisswanson/Library/Python/3.9/lib/python/site-packages/pandas/io/parquet.py", line 351, in read
+    handles = get_handle(
+  File "/Users/travisswanson/Library/Python/3.9/lib/python/site-packages/pandas/io/common.py", line 713, in get_handle
+    ioargs = _get_filepath_or_buffer(
+  File "/Users/travisswanson/Library/Python/3.9/lib/python/site-packages/pandas/io/common.py", line 363, in _get_filepath_or_buffer
+    with urlopen(req_info) as req:
+  File "/Users/travisswanson/Library/Python/3.9/lib/python/site-packages/pandas/io/common.py", line 265, in urlopen
+    return urllib.request.urlopen(*args, **kwargs)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 523, in open
+    response = meth(req, response)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 632, in http_response
+    response = self.parent.error(
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 561, in error
+    return self._call_chain(*args)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 494, in _call_chain
+    result = func(*args)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 641, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+2025-10-22 19:46:11,422 INFO Fetching seasonal_2025 ...
+2025-10-22 19:46:11,500 ERROR Failed to fetch seasonal_2025: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/Users/travisswanson/nfl-props-app/nfl_data_2025_csv/download_nfl_2025.py", line 66, in <module>
+    df = func()
+  File "/Users/travisswanson/nfl-props-app/nfl_data_2025_csv/download_nfl_2025.py", line 37, in <lambda>
+    ("seasonal_2025", lambda: nfl.import_seasonal_data(years=years)),
+  File "/Users/travisswanson/Library/Python/3.9/lib/python/site-packages/nfl_data_py/__init__.py", line 340, in import_seasonal_data
+    data = pandas.concat([pandas.read_parquet(url.format(x), engine='auto') for x in years])
+  File "/Users/travisswanson/Library/Python/3.9/lib/python/site-packages/nfl_data_py/__init__.py", line 340, in <listcomp>
+    data = pandas.concat([pandas.read_parquet(url.format(x), engine='auto') for x in years])
+  File "/Users/travisswanson/Library/Python/3.9/lib/python/site-packages/pandas/io/parquet.py", line 503, in read_parquet
+    return impl.read(
+  File "/Users/travisswanson/Library/Python/3.9/lib/python/site-packages/pandas/io/parquet.py", line 351, in read
+    handles = get_handle(
+  File "/Users/travisswanson/Library/Python/3.9/lib/python/site-packages/pandas/io/common.py", line 713, in get_handle
+    ioargs = _get_filepath_or_buffer(
+  File "/Users/travisswanson/Library/Python/3.9/lib/python/site-packages/pandas/io/common.py", line 363, in _get_filepath_or_buffer
+    with urlopen(req_info) as req:
+  File "/Users/travisswanson/Library/Python/3.9/lib/python/site-packages/pandas/io/common.py", line 265, in urlopen
+    return urllib.request.urlopen(*args, **kwargs)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 523, in open
+    response = meth(req, response)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 632, in http_response
+    response = self.parent.error(
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 561, in error
+    return self._call_chain(*args)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 494, in _call_chain
+    result = func(*args)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 641, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+2025-10-22 19:46:11,503 INFO Fetching seasonal_rosters_2025 ...
+2025-10-22 19:46:12,067 INFO Saved seasonal_rosters_2025 -> nfl_data_2025_csv/seasonal_rosters_2025.csv (rows=3089)
+2025-10-22 19:46:12,067 INFO Fetching weekly_rosters_2025 ...
+2025-10-22 19:46:13,733 INFO Saved weekly_rosters_2025 -> nfl_data_2025_csv/weekly_rosters_2025.csv (rows=19850)
+2025-10-22 19:46:13,734 INFO Fetching win_totals_2025 ...
+2025-10-22 19:46:13,734 WARNING The win totals data source is currently in flux and may be out of date.
+2025-10-22 19:46:14,387 INFO Saved win_totals_2025 -> nfl_data_2025_csv/win_totals_2025.csv (rows=0)
+2025-10-22 19:46:14,387 INFO Fetching scoring_lines_2025 ...
+2025-10-22 19:46:14,631 INFO Saved scoring_lines_2025 -> nfl_data_2025_csv/scoring_lines_2025.csv (rows=0)
+2025-10-22 19:46:14,631 INFO Fetching officials_2025 ...
+2025-10-22 19:46:15,005 INFO Saved officials_2025 -> nfl_data_2025_csv/officials_2025.csv (rows=756)
+2025-10-22 19:46:15,005 INFO Fetching draft_picks_2025 ...
+2025-10-22 19:46:15,748 INFO Saved draft_picks_2025 -> nfl_data_2025_csv/draft_picks_2025.csv (rows=257)
+2025-10-22 19:46:15,748 INFO Fetching draft_values ...
+2025-10-22 19:46:15,933 INFO Saved draft_values -> nfl_data_2025_csv/draft_values.csv (rows=262)
+2025-10-22 19:46:15,934 INFO Fetching team_desc ...
+2025-10-22 19:46:16,547 INFO Saved team_desc -> nfl_data_2025_csv/team_desc.csv (rows=36)
+2025-10-22 19:46:16,547 INFO Fetching schedules_2025 ...
+2025-10-22 19:46:17,359 INFO Saved schedules_2025 -> nfl_data_2025_csv/schedules_2025.csv (rows=272)
+2025-10-22 19:46:17,359 INFO Fetching combine_2025 ...
+2025-10-22 19:46:17,814 INFO Saved combine_2025 -> nfl_data_2025_csv/combine_2025.csv (rows=329)
+2025-10-22 19:46:17,814 INFO Fetching ids ...
+2025-10-22 19:46:18,279 INFO Saved ids -> nfl_data_2025_csv/ids.csv (rows=12145)
+2025-10-22 19:46:18,280 INFO Fetching ngs_passing_2025 ...
+2025-10-22 19:46:18,742 INFO Saved ngs_passing_2025 -> nfl_data_2025_csv/ngs_passing_2025.csv (rows=254)
+2025-10-22 19:46:18,742 INFO Fetching ngs_rushing_2025 ...
+2025-10-22 19:46:19,201 INFO Saved ngs_rushing_2025 -> nfl_data_2025_csv/ngs_rushing_2025.csv (rows=267)
+2025-10-22 19:46:19,202 INFO Fetching ngs_receiving_2025 ...
+2025-10-22 19:46:19,686 INFO Saved ngs_receiving_2025 -> nfl_data_2025_csv/ngs_receiving_2025.csv (rows=626)
+2025-10-22 19:46:19,686 INFO Fetching depth_charts_2025 ...
+2025-10-22 19:46:20,624 INFO Saved depth_charts_2025 -> nfl_data_2025_csv/depth_charts_2025.csv (rows=198916)
+2025-10-22 19:46:20,624 INFO Fetching injuries_2025 ...
+2025-10-22 19:46:20,871 ERROR Failed to fetch injuries_2025: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/Users/travisswanson/nfl-props-app/nfl_data_2025_csv/download_nfl_2025.py", line 66, in <module>
+    df = func()
+  File "/Users/travisswanson/nfl-props-app/nfl_data_2025_csv/download_nfl_2025.py", line 53, in <lambda>
+    ("injuries_2025", lambda: nfl.import_injuries(years=years)),
+  File "/Users/travisswanson/Library/Python/3.9/lib/python/site-packages/nfl_data_py/__init__.py", line 873, in import_injuries
+    df = pandas.concat([pandas.read_parquet(url.format(x), engine='auto') for x in years])
+  File "/Users/travisswanson/Library/Python/3.9/lib/python/site-packages/nfl_data_py/__init__.py", line 873, in <listcomp>
+    df = pandas.concat([pandas.read_parquet(url.format(x), engine='auto') for x in years])
+  File "/Users/travisswanson/Library/Python/3.9/lib/python/site-packages/pandas/io/parquet.py", line 503, in read_parquet
+    return impl.read(
+  File "/Users/travisswanson/Library/Python/3.9/lib/python/site-packages/pandas/io/parquet.py", line 351, in read
+    handles = get_handle(
+  File "/Users/travisswanson/Library/Python/3.9/lib/python/site-packages/pandas/io/common.py", line 713, in get_handle
+    ioargs = _get_filepath_or_buffer(
+  File "/Users/travisswanson/Library/Python/3.9/lib/python/site-packages/pandas/io/common.py", line 363, in _get_filepath_or_buffer
+    with urlopen(req_info) as req:
+  File "/Users/travisswanson/Library/Python/3.9/lib/python/site-packages/pandas/io/common.py", line 265, in urlopen
+    return urllib.request.urlopen(*args, **kwargs)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 523, in open
+    response = meth(req, response)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 632, in http_response
+    response = self.parent.error(
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 561, in error
+    return self._call_chain(*args)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 494, in _call_chain
+    result = func(*args)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 641, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+2025-10-22 19:46:20,876 INFO Fetching qbr_2025 ...
+2025-10-22 19:46:21,156 INFO Saved qbr_2025 -> nfl_data_2025_csv/qbr_2025.csv (rows=0)
+2025-10-22 19:46:21,156 INFO Fetching seasonal_pfr_pass_2025 ...
+2025-10-22 19:46:21,623 INFO Saved seasonal_pfr_pass_2025 -> nfl_data_2025_csv/seasonal_pfr_pass_2025.csv (rows=69)
+2025-10-22 19:46:21,623 INFO Fetching weekly_pfr_pass_2025 ...
+2025-10-22 19:46:22,049 INFO Saved weekly_pfr_pass_2025 -> nfl_data_2025_csv/weekly_pfr_pass_2025.csv (rows=249)
+2025-10-22 19:46:22,050 INFO Fetching snap_counts_2025 ...
+2025-10-22 19:46:22,504 INFO Saved snap_counts_2025 -> nfl_data_2025_csv/snap_counts_2025.csv (rows=10079)
+2025-10-22 19:46:22,504 INFO Fetching ftn_2025 ...
+2025-10-22 19:46:23,042 INFO Saved ftn_2025 -> nfl_data_2025_csv/ftn_2025.csv (rows=18076)
+2025-10-22 19:46:23,042 INFO All steps attempted. Check download.log in nfl_data_2025_csv for details.
+2025 done.
+Downcasting floats.
+Downcasting floats.

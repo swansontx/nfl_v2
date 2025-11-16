@@ -69,3 +69,21 @@ backend/.odds_api_key
 __pycache__/
 odds_*.json
 .env
+
+# Local data and outputs
+nfl_data_2025_csv/
+outputs/
+data/
+
+# Virtualenvs
+.venv
+venv/
+espn_venv/
+
+# Build artifacts
+frontend/.next/
+*.pyc
+__pycache__/
+.DS_Store
+.goose/
+backend/.odds_api_key
