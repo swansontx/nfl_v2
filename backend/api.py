@@ -16,8 +16,15 @@ ODDS_DIR = DATA_DIR / 'odds_live'
 OUTPUTS = Path('outputs')
 NFLDATA = Path('nfl_data_2025_csv')
 
-# start scheduler
-scheduler.start()
+# Scheduler will be started/stopped via FastAPI lifecycle events
+
+@app.on_event('startup')
+async def _startup():
+    scheduler.start()
+
+@app.on_event('shutdown')
+async def _shutdown():
+    scheduler.shutdown()
 
 # Simple helpers
 
