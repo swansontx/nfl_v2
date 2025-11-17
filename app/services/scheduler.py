@@ -6,14 +6,18 @@ log = logging.getLogger(__name__)
 
 sched = BackgroundScheduler()
 
-# Example: run recompute every 15 minutes
-# Use a named job store/trigger here; we rely on the caller to start the scheduler
-sched.add_job(recompute_projections, 'interval', minutes=15, id='recompute_projections')
+JOB_ID = 'recompute_projections'
+
+# Do NOT register jobs at import time. Register when the scheduler is started so importing
+# this module doesn't create side effects.
 
 
 def start():
     if not sched.running:
         log.info('Starting scheduler...')
+        # register job if not already present
+        if not sched.get_job(JOB_ID):
+            sched.add_job(recompute_projections, 'interval', minutes=15, id=JOB_ID)
         sched.start()
     else:
         log.info('Scheduler already running')
@@ -22,6 +26,13 @@ def start():
 def shutdown():
     if sched.running:
         log.info('Shutting down scheduler...')
+        try:
+            # remove job cleanly
+            job = sched.get_job(JOB_ID)
+            if job:
+                sched.remove_job(JOB_ID)
+        except Exception:
+            pass
         sched.shutdown()
     else:
         log.info('Scheduler already stopped')
