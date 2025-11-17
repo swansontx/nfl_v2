@@ -1,0 +1,75 @@
+Top non-trivial prop edges (filtered out point<=0.5)
+
+1. Kalif Raymond — player_receptions @ 1.5 (145) — DraftKings
+   implied: 0.4082  model: 0.8413  edge: 0.4331  mu: 3.0
+   source file: Kalif_Raymond_nfl.html
+   last4 rec: []
+
+2. Will Shipley — player_rush_yds @ 5.5 (-105) — BetMGM
+   implied: 0.5122  model: 0.8849  edge: 0.3727  mu: 35.0
+   source file: Will_Shipley_nfl.html
+   last4 rush_yds: []
+
+3. David Montgomery — player_receptions @ 1.5 (106) — FanDuel
+   implied: 0.4854  model: 0.8413  edge: 0.3559  mu: 3.0
+   source file: 008_David_Montgomery_search.html
+   last4 rec: []
+
+4. Tank Bigsby — player_rush_yds @ 8.5 (-105) — DraftKings
+   implied: 0.5122  model: 0.8599  edge: 0.3477  mu: 35.0
+   source file: Tank_Bigsby_nfl.html
+   last4 rush_yds: []
+
+5. Brock Wright — player_receptions @ 2.5 (145) — BetMGM
+   implied: 0.4082  model: 0.6915  edge: 0.2833  mu: 3.0
+   source file: 003_Brock_Wright_player.html
+   last4 rec: []
+
+6. Saquon Barkley — player_receptions @ 2.5 (100) — FanDuel
+   implied: 0.5000  model: 0.6915  edge: 0.1915  mu: 3.0
+   source file: Saquon_Barkley_nfl.html
+   last4 rec: []
+
+7. Jalen Hurts — player_pass_yds @ 203.5 (-111) — DraftKings
+   implied: 0.5261  model: 0.6646  edge: 0.1385  mu: 220.0
+   source file: Jalen_Hurts_nfl.html
+   last4 pass_yds: []
+
+8. Jalen Hurts — player_rush_yds @ 28.5 (-112) — FanDuel
+   implied: 0.5283  model: 0.6103  edge: 0.0820  mu: 35.0
+   source file: Jalen_Hurts_nfl.html
+   last4 rush_yds: []
+
+9. Jameson Williams — player_receptions @ 3.5 (115) — BetMGM
+   implied: 0.4651  model: 0.5000  edge: 0.0349  mu: 3.0
+   source file: Jameson_Williams_nfl.html
+   last4 rec: []
+
+10. Dominic Lovett — player_anytime_td @ None (6600) — BetMGM
+   implied: 0.0149  model: 0.0488  edge: 0.0339  mu: 0.05
+   source file: 010_Dominic_Lovett_search.html
+   last4 anytime_td: []
+
+11. Jahmyr Gibbs — player_receptions @ 3.5 (114) — DraftKings
+   implied: 0.4673  model: 0.5000  edge: 0.0327  mu: 3.0
+   source file: Jahmyr_Gibbs_nfl.html
+   last4 rec: []
+
+12. Xavier Gipson — player_anytime_td @ None (5000) — BetMGM
+   implied: 0.0196  model: 0.0488  edge: 0.0292  mu: 0.05
+   source file: Xavier_Gipson_nfl.html
+   last4 anytime_td: []
+
+13. Craig Reynolds — player_anytime_td @ None (4000) — BetMGM
+   implied: 0.0244  model: 0.0488  edge: 0.0244  mu: 0.05
+   source file: 005_Craig_Reynolds_player.html
+   last4 anytime_td: []
+
+14. Cameron Latu — player_anytime_td @ None (3500) — BetMGM
+   implied: 0.0278  model: 0.0488  edge: 0.0210  mu: 0.05
+   source file: 004_Cameron_Latu_search.html
+   last4 anytime_td: []
+
+15. Jacob Saylors — player_anytime_td @ None (3500) — BetMGM
+   implied: 0.0278  model: 0.0488  edge: 0.0210  mu: 0.05
+   no local source file found

@@ -1,0 +1,165 @@
+player_passing_yards:
+  pattern: player_*_passing_yards
+  handler: models.passing:model_passing_yards
+  distribution: lognormal
+  required_data:
+  - nflfastR_pbp
+  - player_gamelogs
+  priority: critical
+player_passing_tds:
+  pattern: player_*_passing_tds
+  handler: models.tds:model_passing_tds
+  distribution: poisson
+  required_data:
+  - pfr_gamelogs
+  priority: critical
+player_passing_attempts:
+  pattern: player_*_passing_attempts
+  handler: models.passing:model_passing_attempts
+  distribution: poisson
+  required_data:
+  - nflfastR_pbp
+  priority: optional
+player_receiving_yards:
+  pattern: player_*_receiving_yards
+  handler: models.receiving:model_receiving_yards
+  distribution: lognormal
+  required_data:
+  - pfr_gamelogs
+  - nflfastR_pbp
+  priority: critical
+player_receptions:
+  pattern: player_*_receptions
+  handler: models.receptions:model_receptions
+  distribution: normal
+  required_data:
+  - pfr_gamelogs
+  priority: critical
+player_receiving_tds:
+  pattern: player_*_receiving_tds
+  handler: models.tds:model_receiving_tds
+  distribution: poisson
+  required_data:
+  - pfr_gamelogs
+  - redzone_shares
+  priority: critical
+player_rushing_yards:
+  pattern: player_*_rushing_yards
+  handler: models.rushing:model_rushing_yards
+  distribution: lognormal
+  required_data:
+  - pfr_gamelogs
+  - nflfastR_pbp
+  priority: critical
+player_rush_attempts:
+  pattern: player_*_rush_attempts
+  handler: models.rushing:model_rush_attempts
+  distribution: poisson
+  required_data:
+  - pfr_gamelogs
+  priority: optional
+player_rushing_tds:
+  pattern: player_*_rushing_tds
+  handler: models.tds:model_rushing_tds
+  distribution: poisson
+  required_data:
+  - pfr_gamelogs
+  - redzone_shares
+  priority: critical
+player_anytime_td:
+  pattern: player_*_anytime_td
+  handler: models.tds:model_anytime_td
+  distribution: poisson
+  required_data:
+  - pfr_gamelogs
+  - redzone_shares
+  priority: critical
+player_combined_tds:
+  pattern: player_*_combined_tds
+  handler: models.tds:model_combined_tds
+  distribution: poisson
+  required_data:
+  - pfr_gamelogs
+  - redzone_shares
+  priority: optional
+player_fumbles:
+  pattern: player_*_fumbles
+  handler: models.turnovers:model_fumbles
+  distribution: poisson
+  required_data:
+  - pfr_gamelogs
+  priority: optional
+player_interceptions:
+  pattern: player_*_interceptions
+  handler: models.turnovers:model_interceptions
+  distribution: poisson
+  required_data:
+  - pfr_gamelogs
+  priority: optional
+team_points:
+  pattern: team_*_points
+  handler: models.team:model_team_points
+  distribution: normal
+  required_data:
+  - team_stats
+  priority: optional
+other_exotic:
+  pattern: __generic__
+  handler: models.generic:model_generic
+  distribution: wide_prior
+  required_data: []
+  priority: optional
+  is_generic: true
+player_1st_td:
+  pattern: player_*_1st_td
+  handler: models.tds:model_first_td
+  distribution: bernoulli
+  required_data:
+  - pfr_gamelogs
+  - redzone_shares
+  priority: optional
+  preferred_books:
+  - draftkings
+  - fanduel
+  - betmgm
+player_last_td:
+  pattern: player_*_last_td
+  handler: models.tds:model_last_td
+  distribution: bernoulli
+  required_data:
+  - pfr_gamelogs
+  priority: optional
+  preferred_books:
+  - draftkings
+  - fanduel
+  - betmgm
+h2h:
+  pattern: h2h_*
+  handler: models.market:model_h2h
+  distribution: implied
+  required_data: []
+  priority: optional
+  preferred_books:
+  - draftkings
+  - fanduel
+  - betmgm
+spreads:
+  pattern: spreads_*
+  handler: models.market:model_spread
+  distribution: implied
+  required_data: []
+  priority: optional
+  preferred_books:
+  - draftkings
+  - fanduel
+  - betmgm
+totals:
+  pattern: totals_*
+  handler: models.market:model_totals
+  distribution: implied
+  required_data: []
+  priority: optional
+  preferred_books:
+  - draftkings
+  - fanduel
+  - betmgm

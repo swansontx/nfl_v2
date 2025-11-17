@@ -1,0 +1,47 @@
+# Map OddsAPI market keys to canonical prop templates.
+# Template variables: {participant} (player or team name slugified)
+# Add mappings for NFL player props and common markets.
+
+# Player passing
+player_pass_yds: "player_{participant}_passing_yards"
+player_pass_tds: "player_{participant}_passing_tds"
+player_pass_attempts: "player_{participant}_passing_attempts"
+player_pass_completions: "player_{participant}_passing_completions"
+player_pass_interceptions: "player_{participant}_interceptions"
+player_pass_rush_yds: "player_{participant}_pass_rush_yds"
+player_pass_rush_reception_tds: "player_{participant}_combined_tds"
+player_pass_rush_reception_yds: "player_{participant}_pass_rush_reception_yds"
+
+# Receiving
+player_receptions: "player_{participant}_receptions"
+player_reception_yds: "player_{participant}_receiving_yards"
+player_reception_tds: "player_{participant}_receiving_tds"
+player_reception_longest: "player_{participant}_reception_longest"
+
+# Rushing
+player_rush_yds: "player_{participant}_rushing_yards"
+player_rush_tds: "player_{participant}_rushing_tds"
+player_rush_attempts: "player_{participant}_rush_attempts"
+player_rush_longest: "player_{participant}_rush_longest"
+
+# Touchdowns / Scorers
+player_anytime_td: "player_{participant}_anytime_td"
+player_1st_td: "player_{participant}_1st_td"
+player_last_td: "player_{participant}_last_td"
+player_tds_over: "player_{participant}_combined_tds"
+
+# Misc / defensive
+player_fumbles: "player_{participant}_fumbles"
+player_pass_interceptions: "player_{participant}_interceptions"
+player_sacks: "player_{participant}_sacks"
+
+# Team / game markets
+totals: "totals_{participant}"
+h2h: "h2h_{participant}"
+spreads: "spreads_{participant}"
+team_totals: "team_{participant}_points"
+
+# Alternate variants - map to same canonical templates
+# These will be handled by matching prefixes in code if exact key not found
+
+# Generic fallback not included here (registry has a separate generic handler)

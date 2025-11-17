@@ -1,0 +1,226 @@
+{
+  "aj_brown": {
+    "name": "AJ Brown",
+    "slug": "aj_brown",
+    "pfr_id": "BrowAJ00",
+    "player_file": "/Users/travisswanson/.cache/goose/computer_controller/player_data/001_AJ_Brown_player.html",
+    "team": "Cowboys",
+    "pos": "REL"
+  },
+  "amon_ra_st_brown": {
+    "name": "Amon-Ra St. Brown",
+    "slug": "amon_ra_st_brown",
+    "pfr_id": null,
+    "player_file": "/Users/travisswanson/.cache/goose/computer_controller/player_data/002_Amon-Ra_St__Brown_player.html",
+    "team": "Cowboys",
+    "pos": "REL"
+  },
+  "brock_wright": {
+    "name": "Brock Wright",
+    "slug": "brock_wright",
+    "pfr_id": "WrigBr01",
+    "player_file": "/Users/travisswanson/.cache/goose/computer_controller/player_data/003_Brock_Wright_player.html",
+    "team": "Cowboys",
+    "pos": "REL"
+  },
+  "cameron_latu": {
+    "name": "Cameron Latu",
+    "slug": "cameron_latu",
+    "pfr_id": "LatuCa01",
+    "player_file": "/Users/travisswanson/.cache/goose/computer_controller/player_data/004_Cameron_Latu_player.html",
+    "team": "Cowboys",
+    "pos": "REL"
+  },
+  "craig_reynolds": {
+    "name": "Craig Reynolds",
+    "slug": "craig_reynolds",
+    "pfr_id": "ReynCr00",
+    "player_file": "/Users/travisswanson/.cache/goose/computer_controller/player_data/005_Craig_Reynolds_player.html",
+    "team": "Cowboys",
+    "pos": "REL"
+  },
+  "dallas_goedert": {
+    "name": "Dallas Goedert",
+    "slug": "dallas_goedert",
+    "pfr_id": "GoedDa00",
+    "player_file": "/Users/travisswanson/.cache/goose/computer_controller/player_data/006_Dallas_Goedert_player.html",
+    "team": "Cowboys",
+    "pos": "REL"
+  },
+  "darius_cooper": {
+    "name": "Darius Cooper",
+    "slug": "darius_cooper",
+    "pfr_id": "CoopDa01",
+    "player_file": "/Users/travisswanson/.cache/goose/computer_controller/player_data/007_Darius_Cooper_player.html",
+    "team": "Cowboys",
+    "pos": "REL"
+  },
+  "david_montgomery": {
+    "name": "David Montgomery",
+    "slug": "david_montgomery",
+    "pfr_id": "MontDa01",
+    "player_file": "/Users/travisswanson/.cache/goose/computer_controller/player_data/008_David_Montgomery_player.html",
+    "team": "Cowboys",
+    "pos": "REL"
+  },
+  "devonta_smith": {
+    "name": "DeVonta Smith",
+    "slug": "devonta_smith",
+    "pfr_id": "SmitDe07",
+    "player_file": "/Users/travisswanson/.cache/goose/computer_controller/player_data/009_DeVonta_Smith_player.html",
+    "team": "Cowboys",
+    "pos": "REL"
+  },
+  "dominic_lovett": {
+    "name": "Dominic Lovett",
+    "slug": "dominic_lovett",
+    "pfr_id": "LoveDo00",
+    "player_file": "/Users/travisswanson/.cache/goose/computer_controller/player_data/010_Dominic_Lovett_player.html",
+    "team": "Cowboys",
+    "pos": "REL"
+  },
+  "grant_calcaterra": {
+    "name": "Grant Calcaterra",
+    "slug": "grant_calcaterra",
+    "pfr_id": null,
+    "player_file": "",
+    "team": null,
+    "pos": null
+  },
+  "isaac_teslaa": {
+    "name": "Isaac TeSlaa",
+    "slug": "isaac_teslaa",
+    "pfr_id": null,
+    "player_file": "",
+    "team": null,
+    "pos": null
+  },
+  "jackson_meeks": {
+    "name": "Jackson Meeks",
+    "slug": "jackson_meeks",
+    "pfr_id": null,
+    "player_file": "",
+    "team": null,
+    "pos": null
+  },
+  "jacob_saylors": {
+    "name": "Jacob Saylors",
+    "slug": "jacob_saylors",
+    "pfr_id": null,
+    "player_file": "",
+    "team": null,
+    "pos": null
+  },
+  "jahan_dotson": {
+    "name": "Jahan Dotson",
+    "slug": "jahan_dotson",
+    "pfr_id": null,
+    "player_file": "",
+    "team": null,
+    "pos": null
+  },
+  "jahmyr_gibbs": {
+    "name": "Jahmyr Gibbs",
+    "slug": "jahmyr_gibbs",
+    "pfr_id": null,
+    "player_file": "",
+    "team": null,
+    "pos": null
+  },
+  "jalen_hurts": {
+    "name": "Jalen Hurts",
+    "slug": "jalen_hurts",
+    "pfr_id": null,
+    "player_file": "",
+    "team": null,
+    "pos": null
+  },
+  "jameson_williams": {
+    "name": "Jameson Williams",
+    "slug": "jameson_williams",
+    "pfr_id": null,
+    "player_file": "",
+    "team": null,
+    "pos": null
+  },
+  "jared_goff": {
+    "name": "Jared Goff",
+    "slug": "jared_goff",
+    "pfr_id": null,
+    "player_file": "",
+    "team": null,
+    "pos": null
+  },
+  "kalif_raymond": {
+    "name": "Kalif Raymond",
+    "slug": "kalif_raymond",
+    "pfr_id": null,
+    "player_file": "",
+    "team": null,
+    "pos": null
+  },
+  "kylen_granson": {
+    "name": "Kylen Granson",
+    "slug": "kylen_granson",
+    "pfr_id": null,
+    "player_file": "",
+    "team": null,
+    "pos": null
+  },
+  "ross_dwelley": {
+    "name": "Ross Dwelley",
+    "slug": "ross_dwelley",
+    "pfr_id": null,
+    "player_file": "",
+    "team": null,
+    "pos": null
+  },
+  "saquon_barkley": {
+    "name": "Saquon Barkley",
+    "slug": "saquon_barkley",
+    "pfr_id": null,
+    "player_file": "",
+    "team": null,
+    "pos": null
+  },
+  "sione_vaki": {
+    "name": "Sione Vaki",
+    "slug": "sione_vaki",
+    "pfr_id": null,
+    "player_file": "",
+    "team": null,
+    "pos": null
+  },
+  "tank_bigsby": {
+    "name": "Tank Bigsby",
+    "slug": "tank_bigsby",
+    "pfr_id": null,
+    "player_file": "",
+    "team": null,
+    "pos": null
+  },
+  "tom_kennedy": {
+    "name": "Tom Kennedy",
+    "slug": "tom_kennedy",
+    "pfr_id": null,
+    "player_file": "",
+    "team": null,
+    "pos": null
+  },
+  "will_shipley": {
+    "name": "Will Shipley",
+    "slug": "will_shipley",
+    "pfr_id": null,
+    "player_file": "",
+    "team": null,
+    "pos": null
+  },
+  "xavier_gipson": {
+    "name": "Xavier Gipson",
+    "slug": "xavier_gipson",
+    "pfr_id": null,
+    "player_file": "",
+    "team": null,
+    "pos": null
+  }
+}
