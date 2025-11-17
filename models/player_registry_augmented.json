@@ -4,8 +4,14 @@
     "slug": "aj_brown",
     "pfr_id": "BrowAJ00",
     "player_file": "/Users/travisswanson/.cache/goose/computer_controller/player_data/001_AJ_Brown_player.html",
-    "team": "Cowboys",
-    "pos": "REL"
+    "team": "PHI",
+    "pos": "REL",
+    "team_points": 26.5,
+    "team_tds": 3.7857142857142856,
+    "player_id": "00-0035676",
+    "canonical_name": "A.Brown",
+    "matched_score": 85,
+    "matched_source": "fuzzy"
   },
   "amon_ra_st_brown": {
     "name": "Amon-Ra St. Brown",
@@ -13,7 +19,11 @@
     "pfr_id": null,
     "player_file": "/Users/travisswanson/.cache/goose/computer_controller/player_data/002_Amon-Ra_St__Brown_player.html",
     "team": "Cowboys",
-    "pos": "REL"
+    "pos": "REL",
+    "matched_score": 0,
+    "matched_source": "none",
+    "team_points": 26.5,
+    "team_tds": 3.7857142857142856
   },
   "brock_wright": {
     "name": "Brock Wright",
@@ -21,7 +31,11 @@
     "pfr_id": "WrigBr01",
     "player_file": "/Users/travisswanson/.cache/goose/computer_controller/player_data/003_Brock_Wright_player.html",
     "team": "Cowboys",
-    "pos": "REL"
+    "pos": "REL",
+    "team_points": 26.5,
+    "team_tds": 3.7857142857142856,
+    "matched_score": 0,
+    "matched_source": "none"
   },
   "cameron_latu": {
     "name": "Cameron Latu",
@@ -29,7 +43,11 @@
     "pfr_id": "LatuCa01",
     "player_file": "/Users/travisswanson/.cache/goose/computer_controller/player_data/004_Cameron_Latu_player.html",
     "team": "Cowboys",
-    "pos": "REL"
+    "pos": "REL",
+    "team_points": 26.5,
+    "team_tds": 3.7857142857142856,
+    "matched_score": 0,
+    "matched_source": "none"
   },
   "craig_reynolds": {
     "name": "Craig Reynolds",
@@ -37,7 +55,11 @@
     "pfr_id": "ReynCr00",
     "player_file": "/Users/travisswanson/.cache/goose/computer_controller/player_data/005_Craig_Reynolds_player.html",
     "team": "Cowboys",
-    "pos": "REL"
+    "pos": "REL",
+    "team_points": 26.5,
+    "team_tds": 3.7857142857142856,
+    "matched_score": 0,
+    "matched_source": "none"
   },
   "dallas_goedert": {
     "name": "Dallas Goedert",
@@ -45,7 +67,11 @@
     "pfr_id": "GoedDa00",
     "player_file": "/Users/travisswanson/.cache/goose/computer_controller/player_data/006_Dallas_Goedert_player.html",
     "team": "Cowboys",
-    "pos": "REL"
+    "pos": "REL",
+    "team_points": 26.5,
+    "team_tds": 3.7857142857142856,
+    "matched_score": 0,
+    "matched_source": "none"
   },
   "darius_cooper": {
     "name": "Darius Cooper",
@@ -53,15 +79,25 @@
     "pfr_id": "CoopDa01",
     "player_file": "/Users/travisswanson/.cache/goose/computer_controller/player_data/007_Darius_Cooper_player.html",
     "team": "Cowboys",
-    "pos": "REL"
+    "pos": "REL",
+    "team_points": 26.5,
+    "team_tds": 3.7857142857142856,
+    "matched_score": 0,
+    "matched_source": "none"
   },
   "david_montgomery": {
     "name": "David Montgomery",
     "slug": "david_montgomery",
     "pfr_id": "MontDa01",
     "player_file": "/Users/travisswanson/.cache/goose/computer_controller/player_data/008_David_Montgomery_player.html",
-    "team": "Cowboys",
-    "pos": "REL"
+    "team": "DET",
+    "pos": "REL",
+    "team_points": 26.5,
+    "team_tds": 3.7857142857142856,
+    "player_id": "00-0035685",
+    "canonical_name": "D.Montgomery",
+    "matched_score": 81,
+    "matched_source": "fuzzy"
   },
   "devonta_smith": {
     "name": "DeVonta Smith",
@@ -69,7 +105,11 @@
     "pfr_id": "SmitDe07",
     "player_file": "/Users/travisswanson/.cache/goose/computer_controller/player_data/009_DeVonta_Smith_player.html",
     "team": "Cowboys",
-    "pos": "REL"
+    "pos": "REL",
+    "team_points": 26.5,
+    "team_tds": 3.7857142857142856,
+    "matched_score": 0,
+    "matched_source": "none"
   },
   "dominic_lovett": {
     "name": "Dominic Lovett",
@@ -77,7 +117,11 @@
     "pfr_id": "LoveDo00",
     "player_file": "/Users/travisswanson/.cache/goose/computer_controller/player_data/010_Dominic_Lovett_player.html",
     "team": "Cowboys",
-    "pos": "REL"
+    "pos": "REL",
+    "team_points": 26.5,
+    "team_tds": 3.7857142857142856,
+    "matched_score": 0,
+    "matched_source": "none"
   },
   "grant_calcaterra": {
     "name": "Grant Calcaterra",
@@ -85,7 +129,11 @@
     "pfr_id": null,
     "player_file": "",
     "team": null,
-    "pos": null
+    "pos": null,
+    "matched_score": 0,
+    "matched_source": "none",
+    "team_points": null,
+    "team_tds": null
   },
   "isaac_teslaa": {
     "name": "Isaac TeSlaa",
@@ -93,7 +141,11 @@
     "pfr_id": null,
     "player_file": "",
     "team": null,
-    "pos": null
+    "pos": null,
+    "matched_score": 0,
+    "matched_source": "none",
+    "team_points": null,
+    "team_tds": null
   },
   "jackson_meeks": {
     "name": "Jackson Meeks",
@@ -101,7 +153,11 @@
     "pfr_id": null,
     "player_file": "",
     "team": null,
-    "pos": null
+    "pos": null,
+    "matched_score": 0,
+    "matched_source": "none",
+    "team_points": null,
+    "team_tds": null
   },
   "jacob_saylors": {
     "name": "Jacob Saylors",
@@ -109,7 +165,11 @@
     "pfr_id": null,
     "player_file": "",
     "team": null,
-    "pos": null
+    "pos": null,
+    "matched_score": 0,
+    "matched_source": "none",
+    "team_points": null,
+    "team_tds": null
   },
   "jahan_dotson": {
     "name": "Jahan Dotson",
@@ -117,7 +177,11 @@
     "pfr_id": null,
     "player_file": "",
     "team": null,
-    "pos": null
+    "pos": null,
+    "matched_score": 0,
+    "matched_source": "none",
+    "team_points": null,
+    "team_tds": null
   },
   "jahmyr_gibbs": {
     "name": "Jahmyr Gibbs",
@@ -125,7 +189,11 @@
     "pfr_id": null,
     "player_file": "",
     "team": null,
-    "pos": null
+    "pos": null,
+    "matched_score": 0,
+    "matched_source": "none",
+    "team_points": null,
+    "team_tds": null
   },
   "jalen_hurts": {
     "name": "Jalen Hurts",
@@ -133,7 +201,11 @@
     "pfr_id": null,
     "player_file": "",
     "team": null,
-    "pos": null
+    "pos": null,
+    "matched_score": 0,
+    "matched_source": "none",
+    "team_points": null,
+    "team_tds": null
   },
   "jameson_williams": {
     "name": "Jameson Williams",
@@ -141,7 +213,11 @@
     "pfr_id": null,
     "player_file": "",
     "team": null,
-    "pos": null
+    "pos": null,
+    "matched_score": 0,
+    "matched_source": "none",
+    "team_points": null,
+    "team_tds": null
   },
   "jared_goff": {
     "name": "Jared Goff",
@@ -149,7 +225,11 @@
     "pfr_id": null,
     "player_file": "",
     "team": null,
-    "pos": null
+    "pos": null,
+    "matched_score": 0,
+    "matched_source": "none",
+    "team_points": null,
+    "team_tds": null
   },
   "kalif_raymond": {
     "name": "Kalif Raymond",
@@ -157,7 +237,11 @@
     "pfr_id": null,
     "player_file": "",
     "team": null,
-    "pos": null
+    "pos": null,
+    "matched_score": 0,
+    "matched_source": "none",
+    "team_points": null,
+    "team_tds": null
   },
   "kylen_granson": {
     "name": "Kylen Granson",
@@ -165,7 +249,11 @@
     "pfr_id": null,
     "player_file": "",
     "team": null,
-    "pos": null
+    "pos": null,
+    "matched_score": 0,
+    "matched_source": "none",
+    "team_points": null,
+    "team_tds": null
   },
   "ross_dwelley": {
     "name": "Ross Dwelley",
@@ -173,7 +261,11 @@
     "pfr_id": null,
     "player_file": "",
     "team": null,
-    "pos": null
+    "pos": null,
+    "matched_score": 0,
+    "matched_source": "none",
+    "team_points": null,
+    "team_tds": null
   },
   "saquon_barkley": {
     "name": "Saquon Barkley",
@@ -181,7 +273,11 @@
     "pfr_id": null,
     "player_file": "",
     "team": null,
-    "pos": null
+    "pos": null,
+    "matched_score": 0,
+    "matched_source": "none",
+    "team_points": null,
+    "team_tds": null
   },
   "sione_vaki": {
     "name": "Sione Vaki",
@@ -189,7 +285,11 @@
     "pfr_id": null,
     "player_file": "",
     "team": null,
-    "pos": null
+    "pos": null,
+    "matched_score": 0,
+    "matched_source": "none",
+    "team_points": null,
+    "team_tds": null
   },
   "tank_bigsby": {
     "name": "Tank Bigsby",
@@ -197,7 +297,11 @@
     "pfr_id": null,
     "player_file": "",
     "team": null,
-    "pos": null
+    "pos": null,
+    "matched_score": 0,
+    "matched_source": "none",
+    "team_points": null,
+    "team_tds": null
   },
   "tom_kennedy": {
     "name": "Tom Kennedy",
@@ -205,7 +309,11 @@
     "pfr_id": null,
     "player_file": "",
     "team": null,
-    "pos": null
+    "pos": null,
+    "matched_score": 0,
+    "matched_source": "none",
+    "team_points": null,
+    "team_tds": null
   },
   "will_shipley": {
     "name": "Will Shipley",
@@ -213,7 +321,11 @@
     "pfr_id": null,
     "player_file": "",
     "team": null,
-    "pos": null
+    "pos": null,
+    "matched_score": 0,
+    "matched_source": "none",
+    "team_points": null,
+    "team_tds": null
   },
   "xavier_gipson": {
     "name": "Xavier Gipson",
@@ -221,7 +333,11 @@
     "pfr_id": null,
     "player_file": "",
     "team": null,
-    "pos": null
+    "pos": null,
+    "matched_score": 0,
+    "matched_source": "none",
+    "team_points": null,
+    "team_tds": null
   },
   "javonte_williams": {
     "name": "Javonte Williams",
@@ -230,7 +346,91 @@
     "player_file": "",
     "team": null,
     "pos": null,
-    "auto_added": true
+    "auto_added": true,
+    "matched_score": 0,
+    "matched_source": "none",
+    "dk_markets": {
+      "player_1st_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Javonte Williams",
+            "price": 5.25
+          },
+          "player": "Javonte Williams",
+          "name": "Yes",
+          "point": null,
+          "price": 5.25
+        }
+      ],
+      "player_anytime_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Javonte Williams",
+            "price": 1.56
+          },
+          "player": "Javonte Williams",
+          "name": "Yes",
+          "point": null,
+          "price": 1.56
+        }
+      ],
+      "player_receptions": [
+        {
+          "raw": {
+            "name": "Over",
+            "description": "Javonte Williams",
+            "price": 2.12,
+            "point": 2.5
+          },
+          "player": "Javonte Williams",
+          "name": "Over",
+          "point": 2.5,
+          "price": 2.12
+        },
+        {
+          "raw": {
+            "name": "Under",
+            "description": "Javonte Williams",
+            "price": 1.7,
+            "point": 2.5
+          },
+          "player": "Javonte Williams",
+          "name": "Under",
+          "point": 2.5,
+          "price": 1.7
+        }
+      ],
+      "player_rush_yds": [
+        {
+          "raw": {
+            "name": "Over",
+            "description": "Javonte Williams",
+            "price": 1.9,
+            "point": 75.5
+          },
+          "player": "Javonte Williams",
+          "name": "Over",
+          "point": 75.5,
+          "price": 1.9
+        },
+        {
+          "raw": {
+            "name": "Under",
+            "description": "Javonte Williams",
+            "price": 1.88,
+            "point": 75.5
+          },
+          "player": "Javonte Williams",
+          "name": "Under",
+          "point": 75.5,
+          "price": 1.88
+        }
+      ]
+    },
+    "team_points": null,
+    "team_tds": null
   },
   "ashton_jeanty": {
     "name": "Ashton Jeanty",
@@ -239,7 +439,91 @@
     "player_file": "",
     "team": null,
     "pos": null,
-    "auto_added": true
+    "auto_added": true,
+    "matched_score": 0,
+    "matched_source": "none",
+    "dk_markets": {
+      "player_1st_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Ashton Jeanty",
+            "price": 6.0
+          },
+          "player": "Ashton Jeanty",
+          "name": "Yes",
+          "point": null,
+          "price": 6.0
+        }
+      ],
+      "player_anytime_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Ashton Jeanty",
+            "price": 1.69
+          },
+          "player": "Ashton Jeanty",
+          "name": "Yes",
+          "point": null,
+          "price": 1.69
+        }
+      ],
+      "player_receptions": [
+        {
+          "raw": {
+            "name": "Over",
+            "description": "Ashton Jeanty",
+            "price": 1.63,
+            "point": 2.5
+          },
+          "player": "Ashton Jeanty",
+          "name": "Over",
+          "point": 2.5,
+          "price": 1.63
+        },
+        {
+          "raw": {
+            "name": "Under",
+            "description": "Ashton Jeanty",
+            "price": 2.24,
+            "point": 2.5
+          },
+          "player": "Ashton Jeanty",
+          "name": "Under",
+          "point": 2.5,
+          "price": 2.24
+        }
+      ],
+      "player_rush_yds": [
+        {
+          "raw": {
+            "name": "Over",
+            "description": "Ashton Jeanty",
+            "price": 1.92,
+            "point": 63.5
+          },
+          "player": "Ashton Jeanty",
+          "name": "Over",
+          "point": 63.5,
+          "price": 1.92
+        },
+        {
+          "raw": {
+            "name": "Under",
+            "description": "Ashton Jeanty",
+            "price": 1.87,
+            "point": 63.5
+          },
+          "player": "Ashton Jeanty",
+          "name": "Under",
+          "point": 63.5,
+          "price": 1.87
+        }
+      ]
+    },
+    "team_points": null,
+    "team_tds": null
   },
   "brock_bowers": {
     "name": "Brock Bowers",
@@ -248,7 +532,65 @@
     "player_file": "",
     "team": null,
     "pos": null,
-    "auto_added": true
+    "auto_added": true,
+    "matched_score": 0,
+    "matched_source": "none",
+    "dk_markets": {
+      "player_1st_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Brock Bowers",
+            "price": 9.0
+          },
+          "player": "Brock Bowers",
+          "name": "Yes",
+          "point": null,
+          "price": 9.0
+        }
+      ],
+      "player_anytime_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Brock Bowers",
+            "price": 2.0
+          },
+          "player": "Brock Bowers",
+          "name": "Yes",
+          "point": null,
+          "price": 2.0
+        }
+      ],
+      "player_receptions": [
+        {
+          "raw": {
+            "name": "Over",
+            "description": "Brock Bowers",
+            "price": 1.98,
+            "point": 6.5
+          },
+          "player": "Brock Bowers",
+          "name": "Over",
+          "point": 6.5,
+          "price": 1.98
+        },
+        {
+          "raw": {
+            "name": "Under",
+            "description": "Brock Bowers",
+            "price": 1.8,
+            "point": 6.5
+          },
+          "player": "Brock Bowers",
+          "name": "Under",
+          "point": 6.5,
+          "price": 1.8
+        }
+      ]
+    },
+    "team_points": null,
+    "team_tds": null
   },
   "ceedee_lamb": {
     "name": "Ceedee Lamb",
@@ -257,7 +599,65 @@
     "player_file": "",
     "team": null,
     "pos": null,
-    "auto_added": true
+    "auto_added": true,
+    "matched_score": 0,
+    "matched_source": "none",
+    "dk_markets": {
+      "player_1st_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "CeeDee Lamb",
+            "price": 9.0
+          },
+          "player": "CeeDee Lamb",
+          "name": "Yes",
+          "point": null,
+          "price": 9.0
+        }
+      ],
+      "player_anytime_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "CeeDee Lamb",
+            "price": 2.1
+          },
+          "player": "CeeDee Lamb",
+          "name": "Yes",
+          "point": null,
+          "price": 2.1
+        }
+      ],
+      "player_receptions": [
+        {
+          "raw": {
+            "name": "Over",
+            "description": "CeeDee Lamb",
+            "price": 1.77,
+            "point": 6.5
+          },
+          "player": "CeeDee Lamb",
+          "name": "Over",
+          "point": 6.5,
+          "price": 1.77
+        },
+        {
+          "raw": {
+            "name": "Under",
+            "description": "CeeDee Lamb",
+            "price": 2.02,
+            "point": 6.5
+          },
+          "player": "CeeDee Lamb",
+          "name": "Under",
+          "point": 6.5,
+          "price": 2.02
+        }
+      ]
+    },
+    "team_points": null,
+    "team_tds": null
   },
   "george_pickens": {
     "name": "George Pickens",
@@ -266,7 +666,65 @@
     "player_file": "",
     "team": null,
     "pos": null,
-    "auto_added": true
+    "auto_added": true,
+    "matched_score": 0,
+    "matched_source": "none",
+    "dk_markets": {
+      "player_1st_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "George Pickens",
+            "price": 10.5
+          },
+          "player": "George Pickens",
+          "name": "Yes",
+          "point": null,
+          "price": 10.5
+        }
+      ],
+      "player_anytime_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "George Pickens",
+            "price": 2.45
+          },
+          "player": "George Pickens",
+          "name": "Yes",
+          "point": null,
+          "price": 2.45
+        }
+      ],
+      "player_receptions": [
+        {
+          "raw": {
+            "name": "Over",
+            "description": "George Pickens",
+            "price": 1.76,
+            "point": 4.5
+          },
+          "player": "George Pickens",
+          "name": "Over",
+          "point": 4.5,
+          "price": 1.76
+        },
+        {
+          "raw": {
+            "name": "Under",
+            "description": "George Pickens",
+            "price": 2.03,
+            "point": 4.5
+          },
+          "player": "George Pickens",
+          "name": "Under",
+          "point": 4.5,
+          "price": 2.03
+        }
+      ]
+    },
+    "team_points": null,
+    "team_tds": null
   },
   "jake_ferguson": {
     "name": "Jake Ferguson",
@@ -275,16 +733,134 @@
     "player_file": "",
     "team": null,
     "pos": null,
-    "auto_added": true
+    "auto_added": true,
+    "matched_score": 0,
+    "matched_source": "none",
+    "dk_markets": {
+      "player_1st_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Jake Ferguson",
+            "price": 12.0
+          },
+          "player": "Jake Ferguson",
+          "name": "Yes",
+          "point": null,
+          "price": 12.0
+        }
+      ],
+      "player_anytime_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Jake Ferguson",
+            "price": 2.7
+          },
+          "player": "Jake Ferguson",
+          "name": "Yes",
+          "point": null,
+          "price": 2.7
+        }
+      ],
+      "player_receptions": [
+        {
+          "raw": {
+            "name": "Over",
+            "description": "Jake Ferguson",
+            "price": 1.84,
+            "point": 4.5
+          },
+          "player": "Jake Ferguson",
+          "name": "Over",
+          "point": 4.5,
+          "price": 1.84
+        },
+        {
+          "raw": {
+            "name": "Under",
+            "description": "Jake Ferguson",
+            "price": 1.93,
+            "point": 4.5
+          },
+          "player": "Jake Ferguson",
+          "name": "Under",
+          "point": 4.5,
+          "price": 1.93
+        }
+      ]
+    },
+    "team_points": null,
+    "team_tds": null
   },
   "tre_tucker": {
     "name": "Tre Tucker",
     "slug": "tre_tucker",
     "pfr_id": null,
     "player_file": "",
-    "team": null,
+    "team": "LV",
     "pos": null,
-    "auto_added": true
+    "auto_added": true,
+    "matched_score": 82,
+    "matched_source": "fuzzy",
+    "dk_markets": {
+      "player_1st_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Tre Tucker",
+            "price": 15.0
+          },
+          "player": "Tre Tucker",
+          "name": "Yes",
+          "point": null,
+          "price": 15.0
+        }
+      ],
+      "player_anytime_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Tre Tucker",
+            "price": 3.2
+          },
+          "player": "Tre Tucker",
+          "name": "Yes",
+          "point": null,
+          "price": 3.2
+        }
+      ],
+      "player_receptions": [
+        {
+          "raw": {
+            "name": "Over",
+            "description": "Tre Tucker",
+            "price": 1.69,
+            "point": 3.5
+          },
+          "player": "Tre Tucker",
+          "name": "Over",
+          "point": 3.5,
+          "price": 1.69
+        },
+        {
+          "raw": {
+            "name": "Under",
+            "description": "Tre Tucker",
+            "price": 2.13,
+            "point": 3.5
+          },
+          "player": "Tre Tucker",
+          "name": "Under",
+          "point": 3.5,
+          "price": 2.13
+        }
+      ]
+    },
+    "team_points": null,
+    "team_tds": null,
+    "player_id": "00-0038563",
+    "canonical_name": "T.Tucker"
   },
   "michael_mayer": {
     "name": "Michael Mayer",
@@ -293,7 +869,65 @@
     "player_file": "",
     "team": null,
     "pos": null,
-    "auto_added": true
+    "auto_added": true,
+    "matched_score": 0,
+    "matched_source": "none",
+    "dk_markets": {
+      "player_1st_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Michael Mayer",
+            "price": 21.0
+          },
+          "player": "Michael Mayer",
+          "name": "Yes",
+          "point": null,
+          "price": 21.0
+        }
+      ],
+      "player_anytime_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Michael Mayer",
+            "price": 4.6
+          },
+          "player": "Michael Mayer",
+          "name": "Yes",
+          "point": null,
+          "price": 4.6
+        }
+      ],
+      "player_receptions": [
+        {
+          "raw": {
+            "name": "Over",
+            "description": "Michael Mayer",
+            "price": 1.61,
+            "point": 2.5
+          },
+          "player": "Michael Mayer",
+          "name": "Over",
+          "point": 2.5,
+          "price": 1.61
+        },
+        {
+          "raw": {
+            "name": "Under",
+            "description": "Michael Mayer",
+            "price": 2.28,
+            "point": 2.5
+          },
+          "player": "Michael Mayer",
+          "name": "Under",
+          "point": 2.5,
+          "price": 2.28
+        }
+      ]
+    },
+    "team_points": null,
+    "team_tds": null
   },
   "tyler_lockett": {
     "name": "Tyler Lockett",
@@ -302,7 +936,65 @@
     "player_file": "",
     "team": null,
     "pos": null,
-    "auto_added": true
+    "auto_added": true,
+    "matched_score": 0,
+    "matched_source": "none",
+    "dk_markets": {
+      "player_1st_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Tyler Lockett",
+            "price": 26.0
+          },
+          "player": "Tyler Lockett",
+          "name": "Yes",
+          "point": null,
+          "price": 26.0
+        }
+      ],
+      "player_anytime_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Tyler Lockett",
+            "price": 4.9
+          },
+          "player": "Tyler Lockett",
+          "name": "Yes",
+          "point": null,
+          "price": 4.9
+        }
+      ],
+      "player_receptions": [
+        {
+          "raw": {
+            "name": "Over",
+            "description": "Tyler Lockett",
+            "price": 1.57,
+            "point": 2.5
+          },
+          "player": "Tyler Lockett",
+          "name": "Over",
+          "point": 2.5,
+          "price": 1.57
+        },
+        {
+          "raw": {
+            "name": "Under",
+            "description": "Tyler Lockett",
+            "price": 2.37,
+            "point": 2.5
+          },
+          "player": "Tyler Lockett",
+          "name": "Under",
+          "point": 2.5,
+          "price": 2.37
+        }
+      ]
+    },
+    "team_points": null,
+    "team_tds": null
   },
   "kavontae_turpin": {
     "name": "Kavontae Turpin",
@@ -311,7 +1003,65 @@
     "player_file": "",
     "team": null,
     "pos": null,
-    "auto_added": true
+    "auto_added": true,
+    "matched_score": 0,
+    "matched_source": "none",
+    "dk_markets": {
+      "player_1st_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "KaVontae Turpin",
+            "price": 29.0
+          },
+          "player": "KaVontae Turpin",
+          "name": "Yes",
+          "point": null,
+          "price": 29.0
+        }
+      ],
+      "player_anytime_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "KaVontae Turpin",
+            "price": 6.5
+          },
+          "player": "KaVontae Turpin",
+          "name": "Yes",
+          "point": null,
+          "price": 6.5
+        }
+      ],
+      "player_receptions": [
+        {
+          "raw": {
+            "name": "Over",
+            "description": "KaVontae Turpin",
+            "price": 1.77,
+            "point": 1.5
+          },
+          "player": "KaVontae Turpin",
+          "name": "Over",
+          "point": 1.5,
+          "price": 1.77
+        },
+        {
+          "raw": {
+            "name": "Under",
+            "description": "KaVontae Turpin",
+            "price": 2.02,
+            "point": 1.5
+          },
+          "player": "KaVontae Turpin",
+          "name": "Under",
+          "point": 1.5,
+          "price": 2.02
+        }
+      ]
+    },
+    "team_points": null,
+    "team_tds": null
   },
   "las_vegas_raiders_dst": {
     "name": "Las Vegas Raiders Dst",
@@ -320,7 +1070,39 @@
     "player_file": "",
     "team": "Las Vegas Raiders",
     "pos": null,
-    "auto_added": true
+    "auto_added": true,
+    "matched_score": 0,
+    "matched_source": "none",
+    "dk_markets": {
+      "player_1st_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Las Vegas Raiders D/ST",
+            "price": 29.0
+          },
+          "player": "Las Vegas Raiders D/ST",
+          "name": "Yes",
+          "point": null,
+          "price": 29.0
+        }
+      ],
+      "player_anytime_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Las Vegas Raiders D/ST",
+            "price": 6.0
+          },
+          "player": "Las Vegas Raiders D/ST",
+          "name": "Yes",
+          "point": null,
+          "price": 6.0
+        }
+      ]
+    },
+    "team_points": 23.0,
+    "team_tds": 3.2857142857142856
   },
   "dallas_cowboys_dst": {
     "name": "Dallas Cowboys Dst",
@@ -329,16 +1111,134 @@
     "player_file": "",
     "team": "Dallas Cowboys",
     "pos": null,
-    "auto_added": true
+    "auto_added": true,
+    "matched_score": 0,
+    "matched_source": "none",
+    "dk_markets": {
+      "player_1st_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Dallas Cowboys D/ST",
+            "price": 29.0
+          },
+          "player": "Dallas Cowboys D/ST",
+          "name": "Yes",
+          "point": null,
+          "price": 29.0
+        }
+      ],
+      "player_anytime_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Dallas Cowboys D/ST",
+            "price": 6.0
+          },
+          "player": "Dallas Cowboys D/ST",
+          "name": "Yes",
+          "point": null,
+          "price": 6.0
+        }
+      ]
+    },
+    "team_points": 26.5,
+    "team_tds": 3.7857142857142856
   },
   "dak_prescott": {
     "name": "Dak Prescott",
     "slug": "dak_prescott",
     "pfr_id": null,
     "player_file": "",
-    "team": null,
+    "team": "DAL",
     "pos": null,
-    "auto_added": true
+    "auto_added": true,
+    "matched_score": 85,
+    "matched_source": "fuzzy",
+    "dk_markets": {
+      "player_1st_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Dak Prescott",
+            "price": 31.0
+          },
+          "player": "Dak Prescott",
+          "name": "Yes",
+          "point": null,
+          "price": 31.0
+        }
+      ],
+      "player_anytime_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Dak Prescott",
+            "price": 7.5
+          },
+          "player": "Dak Prescott",
+          "name": "Yes",
+          "point": null,
+          "price": 7.5
+        }
+      ],
+      "player_pass_yds": [
+        {
+          "raw": {
+            "name": "Over",
+            "description": "Dak Prescott",
+            "price": 1.88,
+            "point": 256.5
+          },
+          "player": "Dak Prescott",
+          "name": "Over",
+          "point": 256.5,
+          "price": 1.88
+        },
+        {
+          "raw": {
+            "name": "Under",
+            "description": "Dak Prescott",
+            "price": 1.9,
+            "point": 256.5
+          },
+          "player": "Dak Prescott",
+          "name": "Under",
+          "point": 256.5,
+          "price": 1.9
+        }
+      ],
+      "player_rush_yds": [
+        {
+          "raw": {
+            "name": "Over",
+            "description": "Dak Prescott",
+            "price": 1.93,
+            "point": 9.5
+          },
+          "player": "Dak Prescott",
+          "name": "Over",
+          "point": 9.5,
+          "price": 1.93
+        },
+        {
+          "raw": {
+            "name": "Under",
+            "description": "Dak Prescott",
+            "price": 1.86,
+            "point": 9.5
+          },
+          "player": "Dak Prescott",
+          "name": "Under",
+          "point": 9.5,
+          "price": 1.86
+        }
+      ]
+    },
+    "team_points": null,
+    "team_tds": null,
+    "player_id": "00-0033077",
+    "canonical_name": "D.Prescott"
   },
   "ryan_flournoy": {
     "name": "Ryan Flournoy",
@@ -347,7 +1247,39 @@
     "player_file": "",
     "team": null,
     "pos": null,
-    "auto_added": true
+    "auto_added": true,
+    "matched_score": 0,
+    "matched_source": "none",
+    "dk_markets": {
+      "player_1st_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Ryan Flournoy",
+            "price": 31.0
+          },
+          "player": "Ryan Flournoy",
+          "name": "Yes",
+          "point": null,
+          "price": 31.0
+        }
+      ],
+      "player_anytime_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Ryan Flournoy",
+            "price": 6.5
+          },
+          "player": "Ryan Flournoy",
+          "name": "Yes",
+          "point": null,
+          "price": 6.5
+        }
+      ]
+    },
+    "team_points": null,
+    "team_tds": null
   },
   "donte_thornton_jr": {
     "name": "Donte Thornton Jr",
@@ -356,7 +1288,39 @@
     "player_file": "",
     "team": null,
     "pos": null,
-    "auto_added": true
+    "auto_added": true,
+    "matched_score": 0,
+    "matched_source": "none",
+    "dk_markets": {
+      "player_1st_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Dont'e Thornton Jr.",
+            "price": 36.0
+          },
+          "player": "Dont'e Thornton Jr.",
+          "name": "Yes",
+          "point": null,
+          "price": 36.0
+        }
+      ],
+      "player_anytime_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Dont'e Thornton Jr.",
+            "price": 7.5
+          },
+          "player": "Dont'e Thornton Jr.",
+          "name": "Yes",
+          "point": null,
+          "price": 7.5
+        }
+      ]
+    },
+    "team_points": null,
+    "team_tds": null
   },
   "raheem_mostert": {
     "name": "Raheem Mostert",
@@ -365,7 +1329,39 @@
     "player_file": "",
     "team": null,
     "pos": null,
-    "auto_added": true
+    "auto_added": true,
+    "matched_score": 0,
+    "matched_source": "none",
+    "dk_markets": {
+      "player_1st_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Raheem Mostert",
+            "price": 41.0
+          },
+          "player": "Raheem Mostert",
+          "name": "Yes",
+          "point": null,
+          "price": 41.0
+        }
+      ],
+      "player_anytime_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Raheem Mostert",
+            "price": 10.5
+          },
+          "player": "Raheem Mostert",
+          "name": "Yes",
+          "point": null,
+          "price": 10.5
+        }
+      ]
+    },
+    "team_points": null,
+    "team_tds": null
   },
   "zamir_white": {
     "name": "Zamir White",
@@ -374,16 +1370,82 @@
     "player_file": "",
     "team": null,
     "pos": null,
-    "auto_added": true
+    "auto_added": true,
+    "matched_score": 0,
+    "matched_source": "none",
+    "dk_markets": {
+      "player_1st_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Zamir White",
+            "price": 41.0
+          },
+          "player": "Zamir White",
+          "name": "Yes",
+          "point": null,
+          "price": 41.0
+        }
+      ],
+      "player_anytime_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Zamir White",
+            "price": 10.5
+          },
+          "player": "Zamir White",
+          "name": "Yes",
+          "point": null,
+          "price": 10.5
+        }
+      ]
+    },
+    "team_points": null,
+    "team_tds": null
   },
   "luke_schoonmaker": {
     "name": "Luke Schoonmaker",
     "slug": "luke_schoonmaker",
     "pfr_id": null,
     "player_file": "",
-    "team": null,
+    "team": "DAL",
     "pos": null,
-    "auto_added": true
+    "auto_added": true,
+    "matched_score": 85,
+    "matched_source": "fuzzy",
+    "dk_markets": {
+      "player_1st_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Luke Schoonmaker",
+            "price": 41.0
+          },
+          "player": "Luke Schoonmaker",
+          "name": "Yes",
+          "point": null,
+          "price": 41.0
+        }
+      ],
+      "player_anytime_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Luke Schoonmaker",
+            "price": 10.0
+          },
+          "player": "Luke Schoonmaker",
+          "name": "Yes",
+          "point": null,
+          "price": 10.0
+        }
+      ]
+    },
+    "team_points": null,
+    "team_tds": null,
+    "player_id": "00-0038547",
+    "canonical_name": "L.Schoonmaker"
   },
   "jaydon_blue": {
     "name": "Jaydon Blue",
@@ -392,7 +1454,39 @@
     "player_file": "",
     "team": null,
     "pos": null,
-    "auto_added": true
+    "auto_added": true,
+    "matched_score": 0,
+    "matched_source": "none",
+    "dk_markets": {
+      "player_1st_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Jaydon Blue",
+            "price": 41.0
+          },
+          "player": "Jaydon Blue",
+          "name": "Yes",
+          "point": null,
+          "price": 41.0
+        }
+      ],
+      "player_anytime_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Jaydon Blue",
+            "price": 10.0
+          },
+          "player": "Jaydon Blue",
+          "name": "Yes",
+          "point": null,
+          "price": 10.0
+        }
+      ]
+    },
+    "team_points": null,
+    "team_tds": null
   },
   "geno_smith": {
     "name": "Geno Smith",
@@ -401,7 +1495,91 @@
     "player_file": "",
     "team": null,
     "pos": null,
-    "auto_added": true
+    "auto_added": true,
+    "matched_score": 0,
+    "matched_source": "none",
+    "dk_markets": {
+      "player_1st_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Geno Smith",
+            "price": 46.0
+          },
+          "player": "Geno Smith",
+          "name": "Yes",
+          "point": null,
+          "price": 46.0
+        }
+      ],
+      "player_anytime_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Geno Smith",
+            "price": 11.0
+          },
+          "player": "Geno Smith",
+          "name": "Yes",
+          "point": null,
+          "price": 11.0
+        }
+      ],
+      "player_pass_yds": [
+        {
+          "raw": {
+            "name": "Over",
+            "description": "Geno Smith",
+            "price": 1.88,
+            "point": 230.5
+          },
+          "player": "Geno Smith",
+          "name": "Over",
+          "point": 230.5,
+          "price": 1.88
+        },
+        {
+          "raw": {
+            "name": "Under",
+            "description": "Geno Smith",
+            "price": 1.9,
+            "point": 230.5
+          },
+          "player": "Geno Smith",
+          "name": "Under",
+          "point": 230.5,
+          "price": 1.9
+        }
+      ],
+      "player_rush_yds": [
+        {
+          "raw": {
+            "name": "Over",
+            "description": "Geno Smith",
+            "price": 1.93,
+            "point": 9.5
+          },
+          "player": "Geno Smith",
+          "name": "Over",
+          "point": 9.5,
+          "price": 1.93
+        },
+        {
+          "raw": {
+            "name": "Under",
+            "description": "Geno Smith",
+            "price": 1.85,
+            "point": 9.5
+          },
+          "player": "Geno Smith",
+          "name": "Under",
+          "point": 9.5,
+          "price": 1.85
+        }
+      ]
+    },
+    "team_points": null,
+    "team_tds": null
   },
   "jalen_tolbert": {
     "name": "Jalen Tolbert",
@@ -410,7 +1588,39 @@
     "player_file": "",
     "team": null,
     "pos": null,
-    "auto_added": true
+    "auto_added": true,
+    "matched_score": 0,
+    "matched_source": "none",
+    "dk_markets": {
+      "player_1st_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Jalen Tolbert",
+            "price": 46.0
+          },
+          "player": "Jalen Tolbert",
+          "name": "Yes",
+          "point": null,
+          "price": 46.0
+        }
+      ],
+      "player_anytime_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Jalen Tolbert",
+            "price": 12.0
+          },
+          "player": "Jalen Tolbert",
+          "name": "Yes",
+          "point": null,
+          "price": 12.0
+        }
+      ]
+    },
+    "team_points": null,
+    "team_tds": null
   },
   "jack_bech": {
     "name": "Jack Bech",
@@ -419,7 +1629,39 @@
     "player_file": "",
     "team": null,
     "pos": null,
-    "auto_added": true
+    "auto_added": true,
+    "matched_score": 0,
+    "matched_source": "none",
+    "dk_markets": {
+      "player_1st_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Jack Bech",
+            "price": 51.0
+          },
+          "player": "Jack Bech",
+          "name": "Yes",
+          "point": null,
+          "price": 51.0
+        }
+      ],
+      "player_anytime_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Jack Bech",
+            "price": 10.5
+          },
+          "player": "Jack Bech",
+          "name": "Yes",
+          "point": null,
+          "price": 10.5
+        }
+      ]
+    },
+    "team_points": null,
+    "team_tds": null
   },
   "jonathan_mingo": {
     "name": "Jonathan Mingo",
@@ -428,7 +1670,39 @@
     "player_file": "",
     "team": null,
     "pos": null,
-    "auto_added": true
+    "auto_added": true,
+    "matched_score": 0,
+    "matched_source": "none",
+    "dk_markets": {
+      "player_1st_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Jonathan Mingo",
+            "price": 51.0
+          },
+          "player": "Jonathan Mingo",
+          "name": "Yes",
+          "point": null,
+          "price": 51.0
+        }
+      ],
+      "player_anytime_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Jonathan Mingo",
+            "price": 12.0
+          },
+          "player": "Jonathan Mingo",
+          "name": "Yes",
+          "point": null,
+          "price": 12.0
+        }
+      ]
+    },
+    "team_points": null,
+    "team_tds": null
   },
   "dylan_laube": {
     "name": "Dylan Laube",
@@ -437,7 +1711,39 @@
     "player_file": "",
     "team": null,
     "pos": null,
-    "auto_added": true
+    "auto_added": true,
+    "matched_score": 0,
+    "matched_source": "none",
+    "dk_markets": {
+      "player_1st_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Dylan Laube",
+            "price": 81.0
+          },
+          "player": "Dylan Laube",
+          "name": "Yes",
+          "point": null,
+          "price": 81.0
+        }
+      ],
+      "player_anytime_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Dylan Laube",
+            "price": 23.0
+          },
+          "player": "Dylan Laube",
+          "name": "Yes",
+          "point": null,
+          "price": 23.0
+        }
+      ]
+    },
+    "team_points": null,
+    "team_tds": null
   },
   "brevyn_spannford": {
     "name": "Brevyn Spannford",
@@ -446,7 +1752,39 @@
     "player_file": "",
     "team": null,
     "pos": null,
-    "auto_added": true
+    "auto_added": true,
+    "matched_score": 0,
+    "matched_source": "none",
+    "dk_markets": {
+      "player_1st_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Brevyn Spann-Ford",
+            "price": 81.0
+          },
+          "player": "Brevyn Spann-Ford",
+          "name": "Yes",
+          "point": null,
+          "price": 81.0
+        }
+      ],
+      "player_anytime_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Brevyn Spann-Ford",
+            "price": 18.0
+          },
+          "player": "Brevyn Spann-Ford",
+          "name": "Yes",
+          "point": null,
+          "price": 18.0
+        }
+      ]
+    },
+    "team_points": null,
+    "team_tds": null
   },
   "hunter_luepke": {
     "name": "Hunter Luepke",
@@ -455,16 +1793,82 @@
     "player_file": "",
     "team": null,
     "pos": null,
-    "auto_added": true
+    "auto_added": true,
+    "matched_score": 0,
+    "matched_source": "none",
+    "dk_markets": {
+      "player_1st_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Hunter Luepke",
+            "price": 81.0
+          },
+          "player": "Hunter Luepke",
+          "name": "Yes",
+          "point": null,
+          "price": 81.0
+        }
+      ],
+      "player_anytime_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Hunter Luepke",
+            "price": 21.0
+          },
+          "player": "Hunter Luepke",
+          "name": "Yes",
+          "point": null,
+          "price": 21.0
+        }
+      ]
+    },
+    "team_points": null,
+    "team_tds": null
   },
   "ian_thomas": {
     "name": "Ian Thomas",
     "slug": "ian_thomas",
     "pfr_id": null,
     "player_file": "",
-    "team": null,
+    "team": "CAR",
     "pos": null,
-    "auto_added": true
+    "auto_added": true,
+    "matched_score": 82,
+    "matched_source": "fuzzy",
+    "dk_markets": {
+      "player_1st_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Ian Thomas",
+            "price": 91.0
+          },
+          "player": "Ian Thomas",
+          "name": "Yes",
+          "point": null,
+          "price": 91.0
+        }
+      ],
+      "player_anytime_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Ian Thomas",
+            "price": 23.0
+          },
+          "player": "Ian Thomas",
+          "name": "Yes",
+          "point": null,
+          "price": 23.0
+        }
+      ]
+    },
+    "team_points": null,
+    "team_tds": null,
+    "player_id": "00-0034365",
+    "canonical_name": "I.Thomas"
   },
   "carter_runyon": {
     "name": "Carter Runyon",
@@ -473,7 +1877,39 @@
     "player_file": "",
     "team": null,
     "pos": null,
-    "auto_added": true
+    "auto_added": true,
+    "matched_score": 0,
+    "matched_source": "none",
+    "dk_markets": {
+      "player_1st_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Carter Runyon",
+            "price": 101.0
+          },
+          "player": "Carter Runyon",
+          "name": "Yes",
+          "point": null,
+          "price": 101.0
+        }
+      ],
+      "player_anytime_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Carter Runyon",
+            "price": 23.0
+          },
+          "player": "Carter Runyon",
+          "name": "Yes",
+          "point": null,
+          "price": 23.0
+        }
+      ]
+    },
+    "team_points": null,
+    "team_tds": null
   },
   "alex_bachman": {
     "name": "Alex Bachman",
@@ -482,7 +1918,39 @@
     "player_file": "",
     "team": null,
     "pos": null,
-    "auto_added": true
+    "auto_added": true,
+    "matched_score": 0,
+    "matched_source": "none",
+    "dk_markets": {
+      "player_1st_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Alex Bachman",
+            "price": 121.0
+          },
+          "player": "Alex Bachman",
+          "name": "Yes",
+          "point": null,
+          "price": 121.0
+        }
+      ],
+      "player_anytime_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "Alex Bachman",
+            "price": 36.0
+          },
+          "player": "Alex Bachman",
+          "name": "Yes",
+          "point": null,
+          "price": 36.0
+        }
+      ]
+    },
+    "team_points": null,
+    "team_tds": null
   },
   "no_touchdown": {
     "name": "No Touchdown",
@@ -491,6 +1959,25 @@
     "player_file": "",
     "team": null,
     "pos": null,
-    "auto_added": true
+    "auto_added": true,
+    "matched_score": 0,
+    "matched_source": "none",
+    "dk_markets": {
+      "player_1st_td": [
+        {
+          "raw": {
+            "name": "Yes",
+            "description": "No Touchdown",
+            "price": 151.0
+          },
+          "player": "No Touchdown",
+          "name": "Yes",
+          "point": null,
+          "price": 151.0
+        }
+      ]
+    },
+    "team_points": null,
+    "team_tds": null
   }
 }
