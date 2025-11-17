@@ -34,13 +34,15 @@ Quick one-shot sequence (recommended)
      ```
 
 4. Enrich registry using nflverse data
-   - Download latest player lookup from nflverse releases (scripts exist to fetch stats_player_reg_<YEAR>.csv)
-   - Build inputs/player_lookup_<YEAR>.json (the repo has a helper that writes this when you download the CSV)
-   - Enrich augmented registry automatically:
+   - Download latest player lookup from nflverse releases (scripts exist to fetch stats_player_reg_<YEAR>.csv). We prefer using the expanded alias generation to improve full-name matches.
+   - Build inputs/player_lookup_<YEAR>.json or use the generated inputs/player_lookup_nflverse_expanded.json produced by scripts/parse_nflverse_releases.py
+   - Enrich augmented registry automatically (recommended flags):
      ```bash
      python3 scripts/enrich_registry_with_nflverse.py --event <EVENT_ID> --threshold 80
+     # for better full-name coverage use the expanded lookup pipeline
+     python3 scripts/parse_nflverse_releases.py && python3 scripts/enrich_registry_with_nflverse.py --event <EVENT_ID> --threshold 80 --lookup inputs/player_lookup_nflverse_expanded.json
      ```
-   - Verify outputs/event_<EVENT>_nflverse_verification.csv and inspect low-score rows.
+   - Verify outputs/event_<EVENT>_nflverse_verification_<high|med|low|unmatched>.csv and inspect low-score rows.
 
 5. Re-run models for the event
    - Run models using the (enriched) registry:
