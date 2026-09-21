@@ -100,83 +100,84 @@ def fetch_odds(sport: str = 'americanfootball_nfl', regions: str = 'us', markets
     _save_cache(name, data)
     return data
 
-+def _requests_session_with_retries(total_retries: int = 3, backoff_factor: float = 0.5, status_forcelist=(500, 502, 503, 504)):
-+    """Create a requests.Session with a Retry adapter for transient errors."""
-+    from requests.adapters import HTTPAdapter
-+    try:
-+        from urllib3.util.retry import Retry
-+    except Exception:
-+        # urllib3 should be available via requests; fallback to direct requests
-+        return requests
-+    s = requests.Session()
-+    retries = Retry(total=total_retries, backoff_factor=backoff_factor, status_forcelist=status_forcelist, allowed_methods=frozenset(['GET','POST']))
-+    adapter = HTTPAdapter(max_retries=retries)
-+    s.mount('https://', adapter)
-+    s.mount('http://', adapter)
-+    return s
-+
-+
-+def fetch_event_odds(event_id: str, sport: str = 'americanfootball_nfl', regions: str = 'us',
-+                     markets: Optional[str] = None, bookmakers: Optional[str] = None,
-+                     use_cache: bool = True, cache_name_suffix: Optional[str] = None, timeout: int = 20) -> Dict[str, Any]:
-+    """
-+    Fetch odds for a specific event. Uses endpoint: /v4/sports/{sport}/events/{eventId}/odds
-+    Pass explicit player prop market keys in `markets` (comma-separated), and optionally `bookmakers`.
-+    Caches the response similar to fetch_odds.
-+    """
-+    key = _get_api_key()
-+    if not key:
-+        raise RuntimeError('ODDS_API_KEY not set in environment and no backend/.odds_api_key file found')
-+    name = f"event_odds_{event_id}"
-+    if cache_name_suffix:
-+        name = name + "_" + cache_name_suffix
-+    if use_cache:
-+        cached = _load_cache(name)
-+        if cached:
-+            return cached
-+    url = f"{BASE}/sports/{sport}/events/{event_id}/odds"
-+    params = {
-+        'apiKey': key,
-+        'regions': regions,
-+        'dateFormat': 'iso'
-+    }
-+    if markets:
-+        params['markets'] = markets
-+    if bookmakers:
-+        params['bookmakers'] = bookmakers
-+
-+    s = _requests_session_with_retries()
-+    r = s.get(url, params=params, timeout=timeout)
-+    try:
-+        r.raise_for_status()
-+    except Exception as e:
-+        # include response body for observability
-+        body = None
-+        try:
-+            body = r.text[:2000]
-+        except Exception:
-+            body = '<unavailable>'
-+        raise RuntimeError(f"Odds API error: status={r.status_code}, url={r.url}, body={body}") from e
-+    data = r.json()
-+    _save_cache(name, data)
-+    return data
-+
-+
-+def fetch_event_player_props(event_id: str, sport: str = 'americanfootball_nfl', regions: str = 'us',
-+                             bookmakers: Optional[str] = 'draftkings,fanduel,betmgm', use_cache: bool = True,
-+                             cache_name_suffix: Optional[str] = None, timeout: int = 20) -> Dict[str, Any]:
-+    """Convenience wrapper to fetch common player prop markets for an event.
-+    Ensures we call the per-event odds endpoint with explicit player markets.
-+    """
-+    # common player markets to request (extend as needed)
-+    player_markets = [
-+        'player_pass_yds', 'player_receptions', 'player_anytime_td', 'player_rush_yds', 'player_rec_yds',
-+        'player_rec_yds', 'player_receiving_yds', 'player_rush_yds', 'player_pass_tds'
-+    ]
-+    markets = ','.join(sorted(set(player_markets)))
-+    return fetch_event_odds(event_id=event_id, sport=sport, regions=regions, markets=markets,
-+                            bookmakers=bookmakers, use_cache=use_cache, cache_name_suffix=cache_name_suffix,
-+                            timeout=timeout)
+
+def _requests_session_with_retries(total_retries: int = 3, backoff_factor: float = 0.5, status_forcelist=(500, 502, 503, 504)):
+    """Create a requests.Session with a Retry adapter for transient errors."""
+    from requests.adapters import HTTPAdapter
+    try:
+        from urllib3.util.retry import Retry
+    except Exception:
+        # urllib3 should be available via requests; fallback to direct requests
+        return requests
+    s = requests.Session()
+    retries = Retry(total=total_retries, backoff_factor=backoff_factor, status_forcelist=status_forcelist, allowed_methods=frozenset(['GET','POST']))
+    adapter = HTTPAdapter(max_retries=retries)
+    s.mount('https://', adapter)
+    s.mount('http://', adapter)
+    return s
+
+
+def fetch_event_odds(event_id: str, sport: str = 'americanfootball_nfl', regions: str = 'us',
+                     markets: Optional[str] = None, bookmakers: Optional[str] = None,
+                     use_cache: bool = True, cache_name_suffix: Optional[str] = None, timeout: int = 20) -> Dict[str, Any]:
+    """
+    Fetch odds for a specific event. Uses endpoint: /v4/sports/{sport}/events/{eventId}/odds
+    Pass explicit player prop market keys in `markets` (comma-separated), and optionally `bookmakers`.
+    Caches the response similar to fetch_odds.
+    """
+    key = _get_api_key()
+    if not key:
+        raise RuntimeError('ODDS_API_KEY not set in environment and no backend/.odds_api_key file found')
+    name = f"event_odds_{event_id}"
+    if cache_name_suffix:
+        name = name + "_" + cache_name_suffix
+    if use_cache:
+        cached = _load_cache(name)
+        if cached:
+            return cached
+    url = f"{BASE}/sports/{sport}/events/{event_id}/odds"
+    params = {
+        'apiKey': key,
+        'regions': regions,
+        'dateFormat': 'iso'
+    }
+    if markets:
+        params['markets'] = markets
+    if bookmakers:
+        params['bookmakers'] = bookmakers
+
+    s = _requests_session_with_retries()
+    r = s.get(url, params=params, timeout=timeout)
+    try:
+        r.raise_for_status()
+    except Exception as e:
+        # include response body for observability
+        body = None
+        try:
+            body = r.text[:2000]
+        except Exception:
+            body = '<unavailable>'
+        raise RuntimeError(f"Odds API error: status={r.status_code}, url={r.url}, body={body}") from e
+    data = r.json()
+    _save_cache(name, data)
+    return data
+
+
+def fetch_event_player_props(event_id: str, sport: str = 'americanfootball_nfl', regions: str = 'us',
+                             bookmakers: Optional[str] = 'draftkings,fanduel,betmgm', use_cache: bool = True,
+                             cache_name_suffix: Optional[str] = None, timeout: int = 20) -> Dict[str, Any]:
+    """Convenience wrapper to fetch common player prop markets for an event.
+    Ensures we call the per-event odds endpoint with explicit player markets.
+    """
+    # common player markets to request (extend as needed)
+    player_markets = [
+        'player_pass_yds', 'player_receptions', 'player_anytime_td', 'player_rush_yds', 'player_rec_yds',
+        'player_rec_yds', 'player_receiving_yds', 'player_rush_yds', 'player_pass_tds'
+    ]
+    markets = ','.join(sorted(set(player_markets)))
+    return fetch_event_odds(event_id=event_id, sport=sport, regions=regions, markets=markets,
+                            bookmakers=bookmakers, use_cache=use_cache, cache_name_suffix=cache_name_suffix,
+                            timeout=timeout)
 
 
 def get_event_markets(event_id: str, sport: str = 'americanfootball_nfl', regions: str = 'us',

@@ -25,7 +25,9 @@ def test_fetch_event_odds_uses_correct_url(monkeypatch):
         assert '/sports/americanfootball_nfl/events/' in url
         return DummyResp(200, text='[]')
 
+    monkeypatch.setattr(odds_api, '_get_api_key', lambda: 'test-key')
     monkeypatch.setattr(odds_api, '_requests_session_with_retries', lambda: type('S', (), {'get': staticmethod(fake_session_get)})())
+    monkeypatch.setattr(odds_api, '_save_cache', lambda name, data: None)
     res = odds_api.fetch_event_odds('test_event_1', use_cache=False)
     assert res == []
 

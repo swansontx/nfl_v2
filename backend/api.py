@@ -97,14 +97,44 @@ def injuries():
         return {'summary_file': str(files[-1])}
     raise HTTPException(status_code=404, detail='no injuries data')
 
+class LegCorrelation(BaseModel):
+    """Latent correlation between two legs, by index into `selections`."""
+    i: int
+    j: int
+    r: float
+
+
+class ParlayPrice(BaseModel):
+    """The book's real decimal payout for an exact set of legs."""
+    legs: List[int]
+    price: float
+
+
 class ParlayRequest(BaseModel):
     selections: List[Dict[str, Any]]
     max_legs: Optional[int] = 6
+    min_legs: Optional[int] = 2
+    # Same-game legs are correlated; without these the joint probability is
+    # just the product, which understates correlated legs.
+    correlations: Optional[List[LegCorrelation]] = None
+    # Supply real SGP prices where known -- a book does not pay the product
+    # of the individual legs on a correlated parlay.
+    parlay_prices: Optional[List[ParlayPrice]] = None
+
 
 @app.post('/api/parlay/suggest')
 def parlay_suggest(req: ParlayRequest):
     # delegate to core/parlay implementation
-    res = suggest_parlays(req.selections, max_legs=req.max_legs, top_k=20)
+    pair_corr = {(c.i, c.j): c.r for c in (req.correlations or [])}
+    prices = {tuple(sorted(p.legs)): p.price for p in (req.parlay_prices or [])}
+    res = suggest_parlays(
+        req.selections,
+        max_legs=req.max_legs,
+        min_legs=req.min_legs,
+        top_k=20,
+        pair_corr=pair_corr or None,
+        parlay_prices=prices or None,
+    )
     return res
 
 
