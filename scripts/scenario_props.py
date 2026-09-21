@@ -52,10 +52,10 @@ PROPS = {
     'Matthew Stafford': ('pass_yds', 238.5, -113, True),
     'Malik Nabers':     ('rec_yds',   63.5, -114, True),
     'Isaiah Likely':    ('rec_yds',   44.5, -115, False),
-    'Davante Adams':    ('rec_yds',   54.5, -110, False),
+    'Davante Adams':    ('rec_yds',   62.5, -110, True),
     'Cam Skattebo':     ('rush_yds',  51.5, -114, True),
-    'Kyren Williams':   ('rush_yds',  58.5, -115, False),
-    'Blake Corum':      ('rush_yds',  33.5, -115, False),
+    'Kyren Williams':   ('rush_yds',  63.5, -115, True),
+    'Blake Corum':      ('rush_yds',  47.5, -113, True),
 }
 # Kyren's receiving prop is quoted separately from his rushing prop.
 KYREN_REC = ('rec_yds', 14.5, -111, True)
@@ -98,7 +98,7 @@ SCENARIOS = {
 NACUA_OUT_BOOST = {
     'Davante Adams': 1.30,
     'Kyren Williams REC': 1.15,
-    'Matthew Stafford': 0.96,   # a real downgrade at the position
+    'Matthew Stafford': 0.88,   # WR1 (10 tgt/g) and WR3 both gone
 }
 
 SCENARIO_BLURB = {
@@ -189,11 +189,15 @@ CORR = {
     # Both are Rams passing-game legs with Nacua out: shared pass volume
     # pushes them together, target competition pulls them apart. Net mild.
     ('Davante Adams', 'Kyren Williams (rec)'): 0.15,
+    # Both want the same thing: a competitive game. Skattebo's carries need
+    # the Giants to stay on schedule, and Kyren's receiving work shows up
+    # when the Rams are not comfortably ahead grinding clock.
+    ('Cam Skattebo', 'Kyren Williams (rec)'): 0.28,
 }
 
 # The parlay each scenario actually argues for.
 SETS = {
-    'base':   ['Kyren Williams (rec)', 'Davante Adams'],
+    'base':   ['Kyren Williams (rec)', 'Cam Skattebo'],
     'giants': ['Jaxson Dart', 'Malik Nabers', 'Cam Skattebo'],
     'rams':   ['Kyren Williams', 'Blake Corum', 'Davante Adams'],
 }
