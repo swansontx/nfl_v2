@@ -1,0 +1,87 @@
+{
+  "_comment": [
+    "Worked example: NYG @ LA, MNF Week 2 2026.",
+    "Prop LINES are hand-entered from public reporting on the afternoon of",
+    "2026-09-21 -- nflverse carries no prop markets and every book/aggregator",
+    "is blocked by this environment's egress policy. Re-check before use.",
+    "Leg probabilities `p` are judgement calls, NOT model output.",
+    "The `corr` block is the durable part: it encodes how these legs share a",
+    "game script, which is what app/core/parlay.py prices correctly."
+  ],
+  "legs": {
+    "dart_pass_o213_5": {
+      "label": "Jaxson Dart o213.5 pass yds",
+      "price": -114,
+      "p": 0.52,
+      "note": "230 yds wk1 but on only 29 att; he also ran 11 times, which caps attempts"
+    },
+    "nabers_rec_o63_5": {
+      "label": "Malik Nabers o63.5 rec yds",
+      "price": -114,
+      "p": 0.55,
+      "note": "9 tgt / 69 yds wk1, but only 52% snaps; Likely (8 tgt) competes for targets"
+    },
+    "nabers_atd": {
+      "label": "Malik Nabers anytime TD",
+      "price": 200,
+      "p": 0.33
+    },
+    "likely_rec_o39_5": {
+      "label": "Isaiah Likely o39.5 rec yds",
+      "price": -115,
+      "p": 0.54,
+      "note": "led NYG wk1 with 8 rec / 78 yds on 8 targets"
+    },
+    "skattebo_rush_o64_5": {
+      "label": "Cam Skattebo o64.5 rush yds",
+      "price": -112,
+      "p": 0.50,
+      "note": "18 car / 81 yds wk1, clear workhorse at 61% snaps"
+    },
+    "kyren_rec_o14_5": {
+      "label": "Kyren Williams o14.5 rec yds",
+      "price": -111,
+      "p": 0.55
+    },
+    "adams_rec_o54_5": {
+      "label": "Davante Adams o54.5 rec yds",
+      "price": -110,
+      "p": 0.56,
+      "note": "6 tgt / 26 yds wk1 at 54% snaps; primary beneficiary if Nacua sits"
+    },
+    "rams_ml": {
+      "label": "Rams moneyline",
+      "price": -298,
+      "p": 0.72
+    },
+    "backfield_100_rush": {
+      "label": "Williams+Corum 100+ rush yds",
+      "price": -218,
+      "p": 0.64,
+      "note": "95 combined wk1; NYG allowed 69 rush ypg, 4th best"
+    }
+  },
+  "corr": [
+    ["dart_pass_o213_5", "nabers_rec_o63_5", 0.5],
+    ["dart_pass_o213_5", "likely_rec_o39_5", 0.45],
+    ["dart_pass_o213_5", "nabers_atd", 0.38],
+    ["nabers_rec_o63_5", "nabers_atd", 0.45],
+    ["nabers_rec_o63_5", "likely_rec_o39_5", -0.18],
+    ["dart_pass_o213_5", "skattebo_rush_o64_5", -0.22],
+    ["rams_ml", "dart_pass_o213_5", 0.08],
+    ["rams_ml", "backfield_100_rush", 0.35],
+    ["rams_ml", "adams_rec_o54_5", 0.3],
+    ["kyren_rec_o14_5", "backfield_100_rush", -0.15],
+    ["kyren_rec_o14_5", "rams_ml", -0.12],
+    ["adams_rec_o54_5", "kyren_rec_o14_5", -0.1]
+  ],
+  "parlays": [
+    {"name": "Giants passing stack", "legs": ["dart_pass_o213_5", "nabers_rec_o63_5"]},
+    {"name": "Giants passing stack + TD", "legs": ["dart_pass_o213_5", "nabers_rec_o63_5", "nabers_atd"]},
+    {"name": "Dart + Likely (the wk1 actual leader)", "legs": ["dart_pass_o213_5", "likely_rec_o39_5"]},
+    {"name": "Nacua-out pivot: Adams + Rams win", "legs": ["adams_rec_o54_5", "rams_ml"]},
+    {"name": "Rams game script", "legs": ["rams_ml", "backfield_100_rush"]},
+    {"name": "Both WR1s (opposite offenses)", "legs": ["nabers_rec_o63_5", "adams_rec_o54_5"]},
+    {"name": "Anti-correlated (deliberately bad)", "legs": ["dart_pass_o213_5", "skattebo_rush_o64_5"]}
+  ]
+}
