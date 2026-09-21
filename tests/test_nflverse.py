@@ -156,3 +156,40 @@ def test_find_game_matches_home_or_away(monkeypatch):
     assert nflverse.find_game(2026, 2, 'NYG')['home_team'] == 'LA'
     assert nflverse.find_game(2026, 2, 'LA')['away_team'] == 'NYG'
     assert nflverse.find_game(2026, 2, 'SEA') is None
+
+
+# ------------------------------------------------------------ played_in_game
+
+def test_qb_judged_on_attempts_not_touches():
+    # The Dart case: a QB with a single kneel-down carry and no attempts did
+    # not play, even though targets+carries is nonzero.
+    benched = {'position': 'QB', 'attempts': '0', 'carries': '1', 'targets': '0'}
+    assert nflverse.played_in_game(benched) is False
+
+    started = {'position': 'QB', 'attempts': '29', 'carries': '11', 'targets': '0'}
+    assert nflverse.played_in_game(started) is True
+
+
+def test_qb_attempt_threshold_is_tunable():
+    row = {'position': 'QB', 'attempts': '13', 'carries': '2'}
+    assert nflverse.played_in_game(row) is True
+    assert nflverse.played_in_game(row, min_qb_attempts=15) is False
+
+
+def test_skill_player_needs_one_touch():
+    assert nflverse.played_in_game(
+        {'position': 'WR', 'targets': '1', 'carries': '0'}) is True
+    assert nflverse.played_in_game(
+        {'position': 'RB', 'targets': '0', 'carries': '3'}) is True
+    assert nflverse.played_in_game(
+        {'position': 'WR', 'targets': '0', 'carries': '0'}) is False
+
+
+def test_missing_position_falls_back_to_touches():
+    assert nflverse.played_in_game({'targets': '2'}) is True
+    assert nflverse.played_in_game({}) is False
+
+
+def test_handles_na_cells():
+    assert nflverse.played_in_game(
+        {'position': 'WR', 'targets': 'NA', 'carries': ''}) is False

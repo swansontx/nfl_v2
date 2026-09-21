@@ -185,6 +185,24 @@ def num(value: Any, default: float = 0.0) -> float:
         return default
 
 
+def played_in_game(row: Dict[str, str], min_qb_attempts: int = 10) -> bool:
+    """Did this player actually feature in this game?
+
+    Averaging raw weekly rows silently folds in games a player did not play,
+    which drags a per-game rate down for anyone who was benched, injured or
+    took over mid-season. Jaxson Dart's 2025 rows include two weeks at zero
+    attempts before he became the starter; counting them puts his passing
+    average at 162 yards a game instead of 189.
+
+    The position branch matters: a quarterback who took one kneel-down carry
+    and threw nothing still registers a "touch" if you only count
+    targets+carries, so QBs are judged on attempts instead.
+    """
+    if (row.get('position') or '').upper() == 'QB':
+        return num(row.get('attempts')) >= min_qb_attempts
+    return num(row.get('targets')) + num(row.get('carries')) >= 1
+
+
 # --------------------------------------------------------------------------
 # convenience queries
 # --------------------------------------------------------------------------
